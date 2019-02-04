@@ -1,0 +1,44 @@
+ 
+#open {
+    margin: 20px 200px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: right;
+}
+#div1, #div2, #div3 {
+    width: 25px;
+    height: 2px;
+    background: orangered;
+    margin: 4px;
+    position: absolute;
+}
+#div1 {top: 5px;}
+#div2 {
+    display: block;
+    top: 10px;
+}
+#div3 {top: 15px;}
+.clear {
+    clear: both;
+}
+#drop {
+    height: 0;
+    background: lightgray;
+    overflow-y: hidden;
+}
+#left {
+    float: left;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+#right {
+    float: right;
+    margin-top: 20px;
+    margin-right: 100px;
+} 
+ 
+ 
+
+ 
+ 
