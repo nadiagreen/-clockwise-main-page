@@ -59,7 +59,7 @@
     .navbar a{
         float: left;
         text-align: center;
-        padding: 24px 14px;
+        padding: 26px 14px 28px 14px;
         font-weight: 600;
     }
     .dropdown {
@@ -71,7 +71,7 @@
         border: none;
         outline: none;
         color: rgb(51, 72, 75);
-        padding: 24px 14px;
+        padding: 26px 14px 28px 14px;
         background-color: inherit;
         margin: 0;
         font-weight: 600;
@@ -91,6 +91,7 @@
         border-bottom-right-radius: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         z-index: 1;
+        top: 66px;
     }
     .dropdown-content a {
         float: none;
