@@ -1,9 +1,8 @@
-    var open = document.getElementById("open");
+   var open = document.getElementById("open");
 var div1 = document.getElementById("div1");
 var div2 = document.getElementById("div2");
 var div3 = document.getElementById("div3");
 var drop = document.getElementById("drop");
-
 function myFunction (){
     if( drop.style.height == 0 || div2.style.width == "25px"){
     var pos1 = 5;
@@ -46,15 +45,15 @@ function myFunction (){
  var height4 = 0;
     var id4 = setInterval(frame4, 10);
     function frame4 (){
-        if(height4 == 450){
+        if(height4 == 350){
             clearInterval(id4);
         } else{
-            height4 += 9;
+            height4 += 7;
             drop.style.height = height4 + "px";
         }
     }
 }else { 
-    if(drop.style.height == "450px" || div2.style.width == 0){
+    if(drop.style.height == "350px" || div2.style.width == 0) {
     var pos1 = 10;
     var angle1 = 45;
     var id1 = setInterval(frame1, 100);
@@ -92,20 +91,21 @@ function myFunction (){
         }
     }
    
- var height4 = 450;
+ var height4 = 350;
     var id4 = setInterval(frame4, 10);
     function frame4 (){
         if(height4 == 0){
             clearInterval(id4);
         } else{
-            height4 -= 9;
+            height4 -= 7;
             drop.style.height = height4 + "px";
         }
     }
 }
+}    
 }
-}
-                            
+  
+                           
   
 
  
