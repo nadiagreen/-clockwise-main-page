@@ -17,7 +17,5 @@ document.querySelector('.container').onmousewheel = function(event){
     anime.style.right = x1 + 'px';
       
 }
-                           
-  
 
  
