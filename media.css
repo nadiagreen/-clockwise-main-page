@@ -1,0 +1,41 @@
+@media screen and (max-width: 870px) {
+    header{
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+    }
+    #open {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .logo, .contact{
+        flex: 1;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 306px) {
+    .contact {display: none;}
+}
+@media screen and (max-width: 162px) {
+    .logo {
+        display: block;
+        position: relative;
+    } 
+    header{
+        height: 80px;
+    }
+    .logo a  {
+        position: absolute;
+        left: 10px;
+        top: 50px;
+    }
+    .logo a svg {
+        position: absolute;
+        top: -35px;
+    }
+}
+ 
