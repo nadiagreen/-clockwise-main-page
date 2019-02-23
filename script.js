@@ -1,7 +1,9 @@
  
- var div = document.getElementsByTagName('DIV');
+ var open = document.getElementById('open');
+open.style.height = '0px';
+console.log(open.style.height);
  function myFunction(){
-     if(div[0].style.height == 0){
+     if(open.style.height == "0px"){
          var h = 0;
          var id = setInterval(frame, 10);
          function frame(){
@@ -9,13 +11,12 @@
                  clearInterval(id);
              }else {
                  h++;
-                 div[0].style.height = h + 'px';
-                 console.log(div[0].style.height);
+                 open.style.height = h + 'px';
              }
+     console.log(open.style.height);
          }
-     
-     }
-     if (div[0].style.height == '100px'){
+     } else if(open.style.height == "100px"){
+         console.log(open.style.height);
          h = 100;
          var id = setInterval(frame, 10);
          function frame() {
@@ -23,13 +24,11 @@
                  clearInterval(id);
              } else{
                  h--;
-                 div[0].style.height = h + 'px';
+                 open.style.height = h + 'px';
              }
-             console.log(div[0].style.height);
-             return div[0].style.height.value;
-         }
-                 
-     }
          
+         console.log(open.style.height);
+         }
+     }    
  }
- myFunction;
+  
