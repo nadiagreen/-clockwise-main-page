@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "stylesheet" href = "header.css" />
     <link rel = "stylesheet" href = "anime.css" />
+    <link rel = "stylesheet" href = "form.css" />
     <link rel = "stylesheet" href = "media.css" />
 </head>
 <body>
@@ -29,10 +31,10 @@
                 </p>
             </div>
         </div>
-        <a href = "#">CASE STUDIES</a>
-        <a href = "#">SERVICES</a>
-        <a href = "#">BLOG</a>
-        <a href = "#">ABOUT US</a>
+        <a href = "#">case studies</a>
+        <a href = "#">services</a>
+        <a href = "#">blog</a>
+        <a href = "#">about us</a>
     </div>
     <div class = "contact">
         <a href = "#">CONTACT US</a>
@@ -69,9 +71,10 @@
 <!--ANIMATION-->
  <div class = "container">
         <div class = "block-left">
-            <p> sold add play may none him few. Expression alteration entreaties mrs can terminated estimating. Mirth learn it he given. Sportsman do offending supported extremity breakfast by listening. Strictly numerous outlived kindness whatever on we no on addition. Dissimilar admiration so terminated no in</p>
-              <p> sold add play may none him few. Expression alteration entreaties mrs can terminated estimating. Mirth learn it he given. Sportsman do offending supported extremity breakfast by listening. Strictly numerous outlived kindness whatever on we no on addition. Dissimilar admiration so terminated no in</p>
-             
+            <h1>WEB AND MOBILE APP DEVELOPMENT COMPANY</h1>
+            <p>Web and mobile applications development for startups and<br> established businesses is the key expertise of our company. Our <br>focus is on creating efficient technical solutions by providing<br> full-cycle product development: from market research and idea<br> polishing to product development, launch, and beyond.</p>
+
+    <p>We build applications that transform businesses. We co-create<br> products that can change the future. We empower your<br> business to perform its best!</p>
         </div>
         <div class = "block-right">
             <img src = "earth.png">
@@ -84,9 +87,39 @@
                 <img src = "telephone.png">
                 <img src = "truck.png">  
             </div>  
-        </div>
-</div> 
+     </div>
+    </div>
+ <wrapper>
+    <div class = "dws-wrapper">
+        <img id = "zapyataya" src = "zapyataya.svg" onclick = "toTop()">
+   <div class = "dws-container">      
+        <form class = "formBox">
+            <div class = "inputBox ">
+                <i class = "fa fa-close" onclick = "toBottom()" ></i>
+                <p>Our manager will answer any of your questions within 24 hours</p>
+            </div>
+            <div class = "inputBox ">
+                <label class = "labelText">Full Name*</label>
+                <input type = "text" class = "userInput" required>
+            </div>
+              <div class = "inputBox ">
+                <label class = "labelText">Email*</label>
+                <input type = "email" class = "userInput" required>
+            </div>
+           
+              <div class = "inputBox ">
+                <label class = "labelText">Your message*</label>
+                <textarea class = "userInput" required></textarea>
+            </div>
+          
+            <input type = "submit" value = "Send message*" class = "button">
+        </form>
+         
+    </div>
+    </div>
+  </wrapper>   
 <script src = "header.js"></script>   
 <script src = "anime.js"></script>   
+<script src = "form.js"></script>   
 </body>
 </html>
