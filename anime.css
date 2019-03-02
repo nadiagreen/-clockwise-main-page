@@ -1,0 +1,59 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: rgb(51, 72,75);
+    font-family: sans-serif;
+}
+ 
+.container{
+    width: 100%;
+    top: 60px;
+    position: relative;
+    padding-top: 0;
+    margin: 0;
+    z-index: -1;
+}
+.block-left{
+    top: 0;
+    position: absolute;
+    width: 44%;
+    left: 3%;
+    font-size: 18px;
+    height: 1000px;
+}
+.block-right  {
+    top: 0;
+    position: absolute;
+    right: 0;
+    width: 51%;
+    height: 1000px;
+}
+.anime {
+    height: inherit;
+}
+ 
+.block-right img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+ 
+.bl-text {
+    position: absolute;
+    top: 120px;
+    line-height: 30px;
+}
+.block-left h1{
+    font-size: 56px;
+    line-height: 70px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.block-left p {
+    width: 110%;
+    margin: 20px 0;
+}
+ 

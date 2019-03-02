@@ -1,4 +1,4 @@
-   
+    
 var y = 0;
 var x1 = 0;
 var angle = 0;
@@ -26,5 +26,4 @@ body.onmousewheel = function(event){
      blockRight.style.top -= -y;
      anime.style.top += -y;    
 }  
- 
  
