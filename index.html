@@ -2,10 +2,10 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href = "header.css" />
-    <link rel = "stylesheet" href = "anime.css" />
-    <link rel = "stylesheet" href = "form.css" />
-    <link rel = "stylesheet" href = "media.css" />
+    <link rel = "stylesheet" href = "css/header.css" />
+    <link rel = "stylesheet" href = "css/anime.css" />
+    <link rel = "stylesheet" href = "css/form.css" />
+    <link rel = "stylesheet" href = "css/media.css" />
 </head>
 <body>
 <header>
@@ -79,40 +79,40 @@
            </div>
         </div>
         <div class = "block-right">
-            <img src = "earth.png " alt = "earth">
-            <img src = "arms.png " alt = "arms">
+            <img src = "images/earth.png " alt = "earth">
+            <img src = "images/arms.png " alt = "arms">
             <div class = "anime">
-                <img src = "satellite.png " alt = "satellite">
-                <img src = "ball.png" alt = "ball">
-                <img src = "baloon.png" alt = "baloon">
-                <img src = "bag.png" alt = "bag">
-                <img src = "telephone.png" alt = "telephone">
-                <img src = "truck.png" alt = "truck">  
+                <img src = "images/satellite.png " alt = "satellite">
+                <img src = "images/ball.png" alt = "ball">
+                <img src = "images/baloon.png" alt = "baloon">
+                <img src = "images/bag.png" alt = "bag">
+                <img src = "images/telephone.png" alt = "telephone">
+                <img src = "images/truck.png" alt = "truck">  
             </div>  
      </div>
     </div>
 <!--ZAPYATAYA-->
- <wrapper>
+   <wrapper >
     <div class = "dws-wrapper">
-        <img id = "zapyataya" src = "zapyataya.svg" onclick = "toTop()">
-   <div class = "dws-container">      
-        <form class = "formBox">
+        <img id = "zapyataya" src = "images/zapyataya.svg" onclick = "visible()">
+   <div class = "dws-container" >      
+        <form class = "formBox" onblur = "invisible()">
             <div class = "inputBox ">
-                <i class = "fa fa-close" onclick = "toBottom()" ></i>
+                <i class = "fa fa-close" onclick = "invisible()" ></i>
                 <p>Our manager will answer any of your questions within 24 hours</p>
             </div>
             <div class = "inputBox ">
-                <label class = "labelText">Full Name*</label>
-                <input type = "text" class = "userInput" required>
+                <input type = "text" class = "userInput" placeholder = "Full Name*" required/>
+                  <div class = "error" style = "display: none; color: red">Please provide your full name</div>
             </div>
               <div class = "inputBox ">
-                <label class = "labelText">Email*</label>
-                <input type = "email" class = "userInput" required>
+                <input type = "email" class = "userInput" placeholder = "Email*" required/>
+                  <div class = "error" style = "display: none; color: red">Please provide your e-mail</div>
             </div>
            
               <div class = "inputBox ">
-                <label class = "labelText">Your message*</label>
-                <input type = "text" class = "userInput" required>
+                <input type = "text" class = "userInput" placeholder = "Your message*" required>
+                    <div class = "error" style = "display: none; color: red">Please provide your  question</div>
             </div>
           
             <input type = "submit" value = "Send message*" class = "button">
@@ -120,9 +120,11 @@
          
     </div>
     </div>
-  </wrapper>   
-<script src = "header.js"></script>   
-<script src = "anime.js"></script>   
-<script src = "form.js"></script>   
+  </wrapper>  
+   
+      
+<script src = "js/header.js"></script>   
+<script src = "js/anime.js"></script>   
+<script src = "js/form.js"></script>   
 </body>
 </html>
