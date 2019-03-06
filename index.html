@@ -104,16 +104,16 @@
                 <p>Our manager will answer any of your questions within 24 hours</p>
             </div>
             <div class = "inputBox ">
-                <input type = "text" class = "userInput" placeholder = "Full Name*" required/>
+                <input type = "text" class = "userInput" placeholder = "Full Name*" oninput = "fValidate()"/>
                   <div class = "error" style = "display: none; color: red">Please provide your full name</div>
             </div>
               <div class = "inputBox ">
-                <input type = "email" class = "userInput" placeholder = "Email*" id = "email"/>
+                <input type = "email" class = "userInput" placeholder = "Email*" oninput = "validateEmail()"/>
                   <div class = "error" style = "display: none; color: red">Please provide your e-mail</div>
             </div>
            
               <div class = "inputBox ">
-                <input type = "text" class = "userInput" placeholder = "Your message*" >
+                <input type = "text" class = "userInput" placeholder = "Your message*" oninput = "fValidate()">
                     <div class = "error" style = "display: none; color: red">Please provide your  question</div>
             </div>
           

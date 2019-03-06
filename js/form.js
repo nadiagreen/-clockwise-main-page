@@ -34,6 +34,7 @@ inputs[2].addEventListener("blur", function(){
        }
   };  
  
+ 
 function validateEmail() {
   var str = inputs[1].value;
   var patt = /\S+@\S+\.\S+/;
@@ -51,4 +52,7 @@ function validateEmail() {
     if(inputs[0].value != ""){errors[0].style.display = "none";}
     if(inputs[2].value != ""){errors[2].style.display = "none";}
 } 
- 
+function fValidate(){
+    if(inputs[0].value != ""){errors[0].style.display = "none";}
+    if(inputs[2].value != ""){errors[2].style.display = "none";}
+} 
