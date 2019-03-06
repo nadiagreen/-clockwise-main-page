@@ -6,6 +6,11 @@ body {
     padding: 0;
     font-family: Roboto, sans-serif;   
 }
+header{
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 .dws-container {
     position: fixed;
     bottom: 0;
@@ -15,21 +20,24 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.2);
     overflow: hidden; 
     display: none;
+    z-index: 2;
 }
 .formBox {
     padding: 30px;
     background-color: #fff;
+    border: 1px solid pink;
     
 } 
  #zapyataya {
     position: fixed;
-    top: 520px;
+    top: 460px;
     right: 50px;
     width: 70px;
+     cursor: pointer;
      -webkit-transition: top 0.5s;
 }
 #zapyataya:hover {
-    top: 500px;
+    top: 450px;
 }
 .inputBox p {
     padding: 20px 0;
@@ -52,10 +60,9 @@ body {
     border-bottom: 1px solid #a5a5a5;
     position: relative;
     background: transparent;
-}
-textarea.userInput {
-   height: 100px;
-    margin-top: 12px;
+    z-index: 1;
+    cursor: pointer;
+    border: none;
 }
 .button {
     background-color: white;
@@ -71,13 +78,13 @@ textarea.userInput {
 .button:hover {
     background-color: orange;
     color: white;
+    cursor: pointer;
 }
 .inputBox i {
     position: absolute;
     right: 30px;
     bottom: 80px;
     font-size: 30px;
-    font-weight: 100px;
-    color: rgb(51, 72, 75);
+    font-weight: 100;
+    cursor: pointer;
 }
- 

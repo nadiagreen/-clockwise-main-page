@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "stylesheet" href = "css/header.css" />
     <link rel = "stylesheet" href = "css/anime.css" />
     <link rel = "stylesheet" href = "css/form.css" />
@@ -37,7 +38,8 @@
         <a href = "#">about us</a>
     </div>
     <div class = "contact">
-        <a href = "#">CONTACT US</a>
+        <a href = "#"><span>CONTACT US</span></a>
+        <a href = "#"><i   class = "fa fa-envelope-o"></i></a>
         <div id = "open" onclick = "myFunction()">
             <div id = "div1"></div>
             <div id = "div2"></div>
@@ -92,11 +94,11 @@
      </div>
     </div>
 <!--ZAPYATAYA-->
-   <wrapper >
+  <wrapper >
     <div class = "dws-wrapper">
         <img id = "zapyataya" src = "images/zapyataya.svg" onclick = "visible()">
    <div class = "dws-container" >      
-        <form class = "formBox" onblur = "invisible()">
+        <form class = "formBox">
             <div class = "inputBox ">
                 <i class = "fa fa-close" onclick = "invisible()" ></i>
                 <p>Our manager will answer any of your questions within 24 hours</p>
@@ -106,22 +108,21 @@
                   <div class = "error" style = "display: none; color: red">Please provide your full name</div>
             </div>
               <div class = "inputBox ">
-                <input type = "email" class = "userInput" placeholder = "Email*" required/>
+                <input type = "email" class = "userInput" placeholder = "Email*" id = "email"/>
                   <div class = "error" style = "display: none; color: red">Please provide your e-mail</div>
             </div>
            
               <div class = "inputBox ">
-                <input type = "text" class = "userInput" placeholder = "Your message*" required>
+                <input type = "text" class = "userInput" placeholder = "Your message*" >
                     <div class = "error" style = "display: none; color: red">Please provide your  question</div>
             </div>
           
-            <input type = "submit" value = "Send message*" class = "button">
+            <input type = "button" value = "Send message*" class = "button"  onclick = "validateEmail()"/>
         </form>
          
     </div>
     </div>
-  </wrapper>  
-   
+  </wrapper> 
       
 <script src = "js/header.js"></script>   
 <script src = "js/anime.js"></script>   
