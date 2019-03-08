@@ -24,9 +24,7 @@ header{
 }
 .formBox {
     padding: 30px;
-    background-color: #fff;
-    border: 1px solid pink;
-    
+    background-color: #fff;  
 } 
  #zapyataya {
     position: fixed;
@@ -62,7 +60,6 @@ header{
     background: transparent;
     z-index: 1;
     cursor: pointer;
-    border: none;
 }
 .button {
     background-color: white;

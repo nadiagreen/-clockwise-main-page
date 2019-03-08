@@ -94,32 +94,34 @@
      </div>
     </div>
 <!--ZAPYATAYA-->
-  <wrapper >
+ 
+ 
+ <wrapper >
     <div class = "dws-wrapper">
         <img id = "zapyataya" src = "images/zapyataya.svg" onclick = "visible()">
    <div class = "dws-container" >      
-        <form class = "formBox">
+        <form class = "formBox" action = "/action_page.php">
             <div class = "inputBox ">
                 <i class = "fa fa-close" onclick = "invisible()" ></i>
                 <p>Our manager will answer any of your questions within 24 hours</p>
             </div>
             <div class = "inputBox ">
-                <input type = "text" class = "userInput" placeholder = "Full Name*" oninput = "fValidate()"/>
+                <input type = "text" class = "userInput" placeholder = "Full Name*" />
                   <div class = "error" style = "display: none; color: red">Please provide your full name</div>
             </div>
               <div class = "inputBox ">
-                <input type = "email" class = "userInput" placeholder = "Email*" oninput = "validateEmail()"/>
+                <input type = "email" id = "myEmail" class = "userInput" placeholder = "Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" >
                   <div class = "error" style = "display: none; color: red">Please provide your e-mail</div>
             </div>
            
               <div class = "inputBox ">
-                <input type = "text" class = "userInput" placeholder = "Your message*" oninput = "fValidate()">
+                <input type = "text" class = "userInput" placeholder = "Your message*" />
                     <div class = "error" style = "display: none; color: red">Please provide your  question</div>
             </div>
           
-            <input type = "button" value = "Send message*" class = "button"  onclick = "validateEmail()"/>
+            <button onclick = "val()">Send Message</button>
         </form>
-         
+            <p id = "demo"></p>
     </div>
     </div>
   </wrapper> 
