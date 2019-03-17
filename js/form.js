@@ -2,7 +2,7 @@
 var dwsContainer = document.querySelector('.dws-container');
 var inputs = document.getElementsByClassName("userInput");
 var errors = document.getElementsByClassName("error");
-
+var container = document.querySelector('.container');
 function visible(){
      dwsContainer.style.display = "block"; 
  }
@@ -49,5 +49,17 @@ inputs[2].addEventListener("keyup", function(){
         errors[2].style.display = "block";
     }else errors[2].style.display = "none";
 });
- 
+  
+container.addEventListener('click', function(){
+     dwsContainer.style.width = 0;
+     dwsContainer.style.height = 0;   
+     
+});
 
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == dwsContainer) {
+        dwsContainer.style.display = "none";
+    }
+}
