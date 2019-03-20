@@ -1,14 +1,14 @@
  
-var dwsContainer = document.querySelector('.dws-container');
-var inputs = document.getElementsByClassName("userInput");
+var modal = document.getElementById('id01');
+var inputs = document.getElementsByTagName("input");
 var errors = document.getElementsByClassName("error");
 var container = document.querySelector('.container');
 function visible(){
-     dwsContainer.style.display = "block"; 
+     moal.style.display = "block"; 
  }
 
  function invisible(){
-      dwsContainer.style.display = "none";
+      modal.style.display = "none";
        for (var i = 0; i < inputs.length; i++){
            inputs[i].value = "";
            errors[i].style.display = "none";
@@ -59,7 +59,7 @@ container.addEventListener('click', function(){
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == dwsContainer) {
-        dwsContainer.style.display = "none";
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }

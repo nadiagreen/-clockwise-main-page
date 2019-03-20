@@ -31,27 +31,33 @@
     .block-right img{
         width: 80%;   
     }
+    .containerF {
+        width: 38%;
+    }
 }
  
  
   @media screen and (max-width: 800px) {
       .block-left h1 {
-          font-size: 
-              50px;
+          font-size:  50px;
           line-height: 70px;
       }
       .bl-text {
           position: absolute;
           top: 750px;
+      } 
+      .containerF {
+          width: 44%;
       }
-       
 } 
- 
   @media screen and (max-width: 700px) {
     
       .bl-text {
           position: absolute;
           top: 600px;
+      }
+      .containerF {
+          width: 53%;
       }
 } 
   @media screen and (max-width: 600px) {
@@ -59,6 +65,9 @@
       .bl-text {
           position: absolute;
           top: 500px;
+      }
+      .containerF {
+          width: 65%;
       }
 } 
  
@@ -71,34 +80,13 @@
       .block-right img {
           width: 100%;
       }
-        .dws-container {
+        .modal {
           width: 100%;
           right: 0;
           top: 0;
         overflow: hidden;
         box-shadow: none;
             z-index: 2;
-      }
-      .formBox{
-          width: 100%;
-          height: 100%;
-          padding-right: 20px;
-          border: none;
-          overflow: hidden;
-          
-      }
-      .inputBox i {
-          top: -25px;
-      } 
-      .button{
-          position: absolute;
-          right: 10px;
-      }
-      #zapyataya {
-          top: 360px;
-      }
-      #zapyataya:hover {
-          top: 350px;
       }
       .contact i {
           display: block;
@@ -110,6 +98,10 @@
           color: white;
           background-color: orange;
       }
+      .containerF {
+          width: 80%;
+      }
+       
 } 
   @media screen and (max-width: 400px) {
       .block-left h1 {
@@ -119,11 +111,13 @@
           position: absolute;
           top: 350px;
       }
-      .formBox {
-          margin-right: 0;
-      }
-      .dws-container {
+      .containerF {
+          width: 100%;
+          height: 100%;
+          top: 0;
           right: 0;
+          left: 0;
+          padding-left: 5px;
       }
 }  
 @media screen and (max-width: 300px) {
@@ -138,33 +132,10 @@
           position: absolute;
           top: 300px;
       }
-    .dws-wrapper {
-        width: 100%;
-    }
-    .dws-container {
-        position: fixed;
-        right: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-    .formBox {
-        margin-right: 0;
-        margin-left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-    .button {
-        margin: 0;
+    .containerF button {
         padding: 10px;
-    }
-    .inputBox i {
-        bottom: 120px;
-    }
-    .inputBox {
-        margin-left: 0;
+        font-size: 14px;
+        margin-right: 10px;
     }
 }
 @media screen and (max-width: 200px) {
@@ -184,10 +155,6 @@
         position: absolute;
         top: -35px;
     }
-    .dws-container{
-        width: 100%;
-        height: 100%;
-    }
     .contact {
         display: none;
     }
@@ -198,29 +165,5 @@
     .block-left h1 {
           font-size: 16px;
         line-height: 30px;
-      }
-    
-    .button {
-        right: 0;
-        padding: 8px;
-    } 
-    .inputBox {
-        position: relative;
-        padding-left: 0;
-    }
-    .formBox {
-        padding-left: 5px;
-    }
-    .userInput, inputBox p{
-        font-size: 14px;
-        width: 100%;
-    }
-    .inputBox p {
-        height: 150px;
-        margin-bottom: 20px;
-        margin-top: 50px;
-    }
-    .error {
-        font-size: 12px;
-    }  
+      }  
 } 
