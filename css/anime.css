@@ -31,9 +31,6 @@ body {
     width: 51%;
     height: 1000px;
 }
-.anime {
-    height: inherit;
-}
  
 .block-right img {
     position: absolute;
