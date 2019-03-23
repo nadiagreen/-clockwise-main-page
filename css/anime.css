@@ -19,17 +19,17 @@ body {
 .block-left{
     top: 0;
     position: absolute;
-    width: 44%;
+    width: 30%;
     left: 3%;
     font-size: 18px;
-    height: 1000px;
+    height: 670px;
 }
 .block-right  {
     top: 0;
     position: absolute;
     right: 0;
-    width: 51%;
-    height: 1000px;
+    width: 67%;
+    height: 670px;
 }
  
 .block-right img {
@@ -37,6 +37,7 @@ body {
     top: 0;
     right: 0;
     width: 100%;
+    transition: 1s;
 }
  
 .bl-text {
@@ -45,13 +46,13 @@ body {
     line-height: 30px;
 }
 .block-left h1{
-    font-size: 56px;
-    line-height: 70px;
+    font-size: 45px;
+    line-height: 60px;
     font-weight: 800;
     margin-bottom: 20px;
 }
 .block-left p {
-    width: 110%;
+    width: 100%;
     margin: 20px 0;
 }
  

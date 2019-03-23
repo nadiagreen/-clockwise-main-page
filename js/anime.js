@@ -19,17 +19,26 @@ var aBall = 3;
 var aSatellite = - 4;
 //sqr.style.top = '585px';
 //sqr.style.right = '115px';
-body.onmousewheel = function(event){
-   if(event.deltaY > 0  && aTruck - 1 > 0) {
-       console.log(event.deltaY);
-            //y ++;
-              
+ 
+
+window.onscroll = function(event) {
+    event.deltaY;
+    if (event.deltaY < 0){
+    itemMoveDown();
+    } else {
+        itemMoveTop();    
+  } 
+}
+ 
+function itemMoveTop(event){ 
+    //console.log(truck.scrollTop);
     aTruck--;
     cosTruck = Math.cos(3.14 + 3.14 / 100 * aTruck);  
     sinTruck  = Math.sin(3.14 + 3.14 / 100 * aTruck);
     truck.style.top =  - 425 * (1 + sinTruck) + 'px';
     truck.style.right =  - 425 * cosTruck + 'px';
-     
+     console.log(truck.scrollTop);
+    
     aTelephone--;
     cosTelephone = Math.cos(3.14 + 3.14 / 100 * aTelephone);  
     sinTelephone  = Math.sin(3.14 + 3.14 / 100 * aTelephone);
@@ -59,18 +68,12 @@ body.onmousewheel = function(event){
     sinSatellite  = Math.sin(3.14 + 3.14 / 100 * aSatellite);
     satellite.style.top = 479 - 425 * (1 + sinSatellite) + 'px';
     satellite.style.right = -422 - 425 * cosSatellite + 'px';
-      
- 
-    console.log (truck.style.top);
-    console.log (truck.style.right);
-    console.log (aTruck);          
+}
+          
        
-   } else if (event.deltaY < 0  && aTruck + 1 < 55){
-       console.log(event.deltaY);
-       //y --;
-                aTruck++;
-         console.log(aTruck);
-         
+   function itemMoveDown(event){
+       
+        aTruck++; 
         cosTruck = Math.cos(3.14 + 3.14 / 100 * aTruck);  
         sinTruck  = Math.sin(3.14 + 3.14 / 100 * aTruck);
         truck.style.top =  - 425 * (1 + sinTruck) + 'px';
@@ -106,12 +109,5 @@ body.onmousewheel = function(event){
     sinSatellite  = Math.sin(3.14 + 3.14 / 100 * aSatellite);
     satellite.style.top = 479 - 425 * (1 + sinSatellite) + 'px';
     satellite.style.right = -422 - 425 * cosSatellite + 'px';
-      
-    //sqr.style.top = 585  - 425 * (1 + sinTruck) + 'px';
-    //sqr.style.right = 115  - 425 * cosTruck + 'px'; 
    }
-    
-    //blockLeft.style.top  -= y + 100 + 'px';
-    // blockRight.style.top -= - y +  'px';    
-}  
  

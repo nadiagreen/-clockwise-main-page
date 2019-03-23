@@ -50,11 +50,11 @@ inputs[2].addEventListener("keyup", function(){
     }else errors[2].style.display = "none";
 });
   
-container.addEventListener('click', function(){
-     dwsContainer.style.width = 0;
-     dwsContainer.style.height = 0;   
+//container.addEventListener('click', function(){
+     //dwsContainer.style.width = 0;
+     //dwsContainer.style.height = 0;   
      
-});
+//});
 
 
 // When the user clicks anywhere outside of the modal, close it
