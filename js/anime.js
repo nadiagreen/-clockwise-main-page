@@ -1,5 +1,6 @@
-    
-var y = 0;
+ 
+     
+
 var blockLeft = document.querySelector('.block-left');
 var blockRight = document.querySelector('.block-right');
 var container = document.querySelector('.container');
@@ -18,26 +19,34 @@ var aBaloon = 14;
 var aBall = 3;
 var aSatellite = - 4;
 //sqr.style.top = '585px';
-//sqr.style.right = '115px';
- 
+//sqr.style.right = '115px'; 
 
-window.onscroll = function(event) {
-    event.deltaY;
-    if (event.deltaY < 0){
-    itemMoveDown();
-    } else {
-        itemMoveTop();    
-  } 
+function scrollDetect(){
+  var lastScroll = 0;
+
+  window.onscroll = function() {
+      let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
+
+      if (currentScroll > 0 && lastScroll <= currentScroll){
+        lastScroll = currentScroll;
+        document.getElementById("scrollLoc").innerHTML = "Scrolling UP";
+          itemMoveTop();
+      }else{
+        lastScroll = currentScroll;
+        document.getElementById("scrollLoc").innerHTML = "Scrolling DOWN";
+          itemMoveDown();
+      }
+  };
 }
+
+scrollDetect();
  
 function itemMoveTop(event){ 
-    //console.log(truck.scrollTop);
     aTruck--;
     cosTruck = Math.cos(3.14 + 3.14 / 100 * aTruck);  
     sinTruck  = Math.sin(3.14 + 3.14 / 100 * aTruck);
     truck.style.top =  - 425 * (1 + sinTruck) + 'px';
     truck.style.right =  - 425 * cosTruck + 'px';
-     console.log(truck.scrollTop);
     
     aTelephone--;
     cosTelephone = Math.cos(3.14 + 3.14 / 100 * aTelephone);  
@@ -69,17 +78,14 @@ function itemMoveTop(event){
     satellite.style.top = 479 - 425 * (1 + sinSatellite) + 'px';
     satellite.style.right = -422 - 425 * cosSatellite + 'px';
 }
-          
-       
+      
    function itemMoveDown(event){
-       
         aTruck++; 
         cosTruck = Math.cos(3.14 + 3.14 / 100 * aTruck);  
         sinTruck  = Math.sin(3.14 + 3.14 / 100 * aTruck);
         truck.style.top =  - 425 * (1 + sinTruck) + 'px';
         truck.style.right =  - 425 * cosTruck + 'px';
-         
-             
+                 
     aTelephone++;
     cosTelephone = Math.cos(3.14 + 3.14 / 100 * aTelephone);  
     sinTelephone  = Math.sin(3.14 + 3.14 / 100 * aTelephone);
@@ -110,4 +116,4 @@ function itemMoveTop(event){
     satellite.style.top = 479 - 425 * (1 + sinSatellite) + 'px';
     satellite.style.right = -422 - 425 * cosSatellite + 'px';
    }
- 
+   
