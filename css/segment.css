@@ -1,0 +1,37 @@
+#segment {
+    position: absolute;
+    top: 2370px;
+    display: flex;
+    align-items: center;
+    
+}
+#segment-text {
+    flex: 1;
+    margin-left: 3%;
+    box-sizing: border-box;
+}
+#segment-text p {
+    font-size: 18px;
+    line-height: 30px;
+}   
+#segment-text h3 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 100px;   
+}
+#segment-text i {
+    font-size: 10px;
+    color: red;
+    bottom: 5px;
+}
+#segment-img {
+    flex: 1;
+    margin-left: 50px;
+}
+#segment-circle {
+    width: 500px;
+    height 500px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    z-index: 1;
+}
