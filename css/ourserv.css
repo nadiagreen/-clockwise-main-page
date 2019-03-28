@@ -1,0 +1,148 @@
+#our-services{
+  position: absolute;
+    display: flex;
+  top: 840px;
+  left: 3%;
+  width: 220px;  
+  background-color: darkorange;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  font-family:  sans-serif;
+  line-height: 50px;
+  border-radius: 30px;
+padding-left: 30px;
+padding-right: 5px;
+    
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: orange;
+      align-items: center; 
+    padding: 0 13px;
+}
+#devel {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 1010px;
+    left: 3%;
+}
+#development-text {
+    flex: 3.5;
+    font-size: 18px;
+    line-height: 30px;
+}
+#development-text h2{
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+#development-text p{
+    margin-bottom: 30px;
+    
+}
+#development-text p:nth-child(3){
+    font-weight: 600;
+}
+#fully  {
+    flex: 6.5;
+    height: 400px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+ #fully div img{
+     height 60px;
+} 
+ #fully div p{
+     font-size: 16px;
+     line-height 50px;
+     margin-bottom: 100px;
+} 
+#how {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 1600px;
+    left: 3%;
+    width: 80%;
+}
+#how div:first-child {
+    flex: 4;
+    font-size: 40px;
+    font-weight: 600;
+}
+#how div:last-child {
+    margin-top: 15px;
+    flex: 6;
+    font-size: 20px;
+}  
+#toddy {
+    position: absolute;
+    top: 1700px;
+    left: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+#toddy div div {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgb(159, 225, 215);
+}
+#toddy div img:first-child {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    transition: top 1s;
+}
+#toddy div img:first-child:hover {
+    top: 0;
+} 
+#toddy div img:last-child {
+    position: absolute;
+    top: -10px;
+    left: 220px;
+    transition: top 1s;
+}
+
+#toddy div img:last-child:hover {
+    top: -60px;
+}
+#toddy div:last-child {
+    padding-top: 100px;
+}
+#toddy div p, #toddy div h1{
+    width: 70%;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+#toddy div p i {
+    font-size: 10px;
+    color: red;
+}
+#toddy div h1 {
+    font-size:  28px;
+    font-weight: 600;
+}
+#forw span {
+    font-size: 20px;
+    letter-spacing: -12px;
+}
+ #demo{
+    margin-left: 100px;
+    letter-spacing: normal;
+     font-size: 16px;
+} 

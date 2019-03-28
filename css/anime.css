@@ -20,7 +20,7 @@ html,body{
 }
 
 .red{
-  background: pink;
+  background-color: blanchedalmond;
 }
 .red img {
     position: absolute;
@@ -44,6 +44,7 @@ html,body{
   font-size: 20px;
   top:30%;
   left:3%;
+  line-height: 35px;
 }   
 .cont h1 {
     font-size: 45px;
