@@ -1,214 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel = "stylesheet" href = "css/header.css" />
-    <link rel = "stylesheet" href = "css/anime.css" />
-    <link rel = "stylesheet" href = "css/form.css" />
-    <link rel = "stylesheet" href = "css/media.css" />
-    <link rel = "stylesheet" href = "css/ourserv.css" />
-    <link rel = "stylesheet" href = "css/segment.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "style1.css" />
+   
 </head>
 <body>
-<header>
-    <div class = "logo">
-       <a >
-              <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" overflow="scroll" xml:space="preserve" alt="Clockwise Software" class="logo" data-v-1a9bb128=""><path fill="#ED6362" d="M475.1,258c0,120.1-97.3,217.4-217.4,217.4S40.3,378.1,40.3,258c0-119.7,96.8-216.9,216.5-217.4l17.9-19 L256.7,3.7C116.7,4.2,3.3,117.8,3.3,258c0,140.5,113.9,254.3,254.3,254.3S512,398.5,512,258H475.1z" data-v-1a9bb128=""></path><path fill="#F98D6C" d="M406.5,258c0,82.2-66.6,148.8-148.8,148.8S108.8,340.2,108.8,258c0-81.9,66.1-148.3,147.9-148.8l17.9-19.4 l-17.9-18.7c-102.8,0.5-186,84-186,186.9c0,103.3,83.7,187,187,187s187-83.7,187-187H406.5z" data-v-1a9bb128=""></path><path fill="#FACD6A" d="M337.9,258c0,44.3-35.9,80.3-80.3,80.3c-44.3,0-80.3-35.9-80.3-80.3c0-44,35.4-79.8,79.3-80.3l18.1-19.1 l-18.1-18.4c-64.6,0.5-116.8,53-116.8,117.7c0,65,52.7,117.7,117.7,117.7S375.4,323,375.4,258H337.9z" data-v-1a9bb128=""></path></svg>
-        </a>
-    <a id = "clock" href = "#">CLOCKWISE</a>
-    </div>
-    <div class = "navbar">
-        <div class = "dropdown">
-            <button class = "dropbtn">EXPERTIZE</button>
-            <div class = "dropdown-content">
-                <p>
-                    <a href = "#">Logistics</a>
-                    <a href = "#">Startups</a>
-                    <a href = "#">E-commerce</a>
-                </p>
-                <p>
-                    <a href = "#">Marketplaces</a>
-                    <a href = "#">IOT</a>
-                    <a id = "aaa" href = "#">aaaaaaaaaaaaaaaaaa</a>
-                </p>
+<div id = "header">
+    <div id = "inner-header">
+        <div id = "logo">
+    <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" overflow="scroll" xml:space="preserve" alt="Clockwise Software" class="logo" data-v-1a9bb128=""><path fill="#ED6362" d="M475.1,258c0,120.1-97.3,217.4-217.4,217.4S40.3,378.1,40.3,258c0-119.7,96.8-216.9,216.5-217.4l17.9-19 L256.7,3.7C116.7,4.2,3.3,117.8,3.3,258c0,140.5,113.9,254.3,254.3,254.3S512,398.5,512,258H475.1z" data-v-1a9bb128=""></path><path fill="#F98D6C" d="M406.5,258c0,82.2-66.6,148.8-148.8,148.8S108.8,340.2,108.8,258c0-81.9,66.1-148.3,147.9-148.8l17.9-19.4 l-17.9-18.7c-102.8,0.5-186,84-186,186.9c0,103.3,83.7,187,187,187s187-83.7,187-187H406.5z" data-v-1a9bb128=""></path><path fill="#FACD6A" d="M337.9,258c0,44.3-35.9,80.3-80.3,80.3c-44.3,0-80.3-35.9-80.3-80.3c0-44,35.4-79.8,79.3-80.3l18.1-19.1 l-18.1-18.4c-64.6,0.5-116.8,53-116.8,117.7c0,65,52.7,117.7,117.7,117.7S375.4,323,375.4,258H337.9z" data-v-1a9bb128=""></path></svg>
+            <a href = "#">Clockwise</a>
+        </div>
+        <div class = "navbar">
+            <a href = "#" id = "expertise">EXPERTISE</a>
+            <a href = "#" id = "case-studies">CASE STUDIES</a>
+            <a href = "#" id = "services">SERVICES</a>
+            <a href = "#" id = "blog">BLOG</a>
+            <a href = "#" id = "about-us">ABOUT US</a>
+            <a href = "#" id = "contact-us">CONTACT US</a>
+            <a href = "#"><i class = "fa fa-envelope-o"></i></a>
+            <div id = "open" onclick = "op()">
+                <div id = "stick-1"></div>
+                <div id = "stick-2"></div>
+                <div id = "stick-3"></div>
             </div>
         </div>
-        
-            <a href = "#">case studies</a>
-            <a href = "#">services</a>
-            <a href = "#">blog</a>
-            <a href = "#">about us</a>
-        
     </div>
-    <div class = "contact">
-        <a href = "#"><span>CONTACT US</span></a>
-        <a href = "#"><i   class = "fa fa-envelope-o"></i></a>
-        <div id = "open" onclick = "myFunction()">
-            <div id = "div1"></div>
-            <div id = "div2"></div>
-            <div id = "div3"></div>
-        </div>
-    </div> 
-</header>
-<div id = "drop">
-    <div >
-        <h5>EXPERTISE</h5>
-        <a href = "#">Logistics</a>
-        <a href = "#">Startups</a>
-        <a href = "#">E-commerce</a>
-        <a href = "#">Marketplaces</a>
-        <a href = "#">IOT</a>
-        <h5>BLOG</h5>
     </div>
-    <div>
-        <h5>CASE STUDIES</h5>
-        <a href = "#">Toddy</a>
-        <a href = "#">UDK</a>
-        <a href = "#">Strapping</a>
-        <a href = "#">Segment AI</a>
-        <a href = "#">Knocking</a>
-        <a href = "#">Eventbrite</a>
-        <h5>SERVICES</h5>
-        <h5>ABOUT US</h5>
-    </div>
-</div>
-<div class = "clear"></div>
+<!------------------------------MAIN ANIMATION------------------------------------------------------>
     
-<!--ANIMATION-->
-  <div class="cont">
-  <div class="item">
-</div>
-  <div class="item red">
-    <img src = "images/earth.png " id = "earth">
-    <img src = "images/arms.png " id  = "arms">
-    <img src = "images/satellite.png " id = "satellite">
-    <img src = "images/ball.png" id = "ball">
-    <img src = "images/baloon.png" id = "baloon">
-    <img src = "images/bag.png" id = "bag">
-    <img src = "images/telephone.png" id = "telephone" alt = "telephone">
-    <img src = "images/truck.png" id = "truck" alt = "truck">     
-</div>
-      <p id="scrollLoc">0</p>
-      <div id = "mobile">
-          <h1>MOBILE APP DEVELOPMENT COMPANY</h1>
-Web and mobile applications development for startups and established businesses is the key expertise of our company. Our focus is on creating efficient technical solutions by providing full-cycle product development: from market research and idea polishing to product development, launch, and beyond.
-
-We build applications that transform businesses. We co-create products that can change the future. We empower your business to perform its best!
-      
-       
-</div>
-</div>   
-<!--ZAPYATAYA-->
- <div id = "id01" class = "modal">
-<form class = "modal-content animate" action = "/action_page.php">
-    <div class = "containerF"> 
-        <div><span onclick = "document.getElementById('id01').style.display = 'none'" class = "close" title = 
-                   "Close Modal">&times;</span></div>
-        <div><p>Our manager will answer any of your questions within 24 hours</p></div>
-        <div><input type = "text" placeholder = "Full Name*" name = "uname"></div>
-        <div class = "error">Please provide your full name</div>
-        <div><input type = "email" placeholder = "E-mail*" name = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" ></div>
-        <div class = "error">Please provide your e-mail</div>
-        <div><input type = "text" placeholder = "Your message*" name = "message"></div>
-        <div class = "error">Please provide your question</div>
-        <div><button type = "submit">Send Message</button></div>    
-    </div>
-</form>
-</div>
-<div onclick = "document.getElementById('id01').style.display = 'block'" style = "width: auto;">
-    <img src = "images/zapyataya.svg" id = "zapyataya" alt = " Zapyataya"/>
-</div>
-    <div class = "clear"></div>
-<div id = "our-services">OUR SERVICES
-    <div id = "circle"><span class = "glyphicon glyphicon-chevron-right"></span></div>
-</div>
-<div class = "clear"></div>
-<div id = "devel">
-<div id = "development-text">
-    <h2>Development with a focus on your needs</h2>
-    <p>Clockwise Software is a custom mobile and web application development company. We don’t just build applications. We offer complex solutions to existing business problems. Our aim is to understand the situation in detail and provide our client with the most effective solution.</p>
-
-    <p>Our responsibility goes far behind pure programming.</p>
-</div>
-<div id = "fully">
-        <div>
-            <img src = "images/fully.svg " >
-            <p >Fully custom solution</p>    
-            <img src = "images/thorough.svg " >
-            <p >Thorough testing</p> 
-        </div>
-        <div>
-            <img src = "images/deep.svg " style = "height: 55px;" >
-            <p >Deep case analisis</p>        
-            <img src = "images/support.svg " >  
-            <p >Support and maintenance</p>
-        </div>
-        <div>
-            <img src = "images/development.svg">
-            <p >Development best  practices</p>   
-            <img src = "images/business.svg " >
-            <p >Business consulting</p>
-        </div>   
-</div>
-</div>
-    <div class = "clear"></div>
-<div id = "how">
-<div>
-How we did it
-</div>
-<div>
-Clockwise Software can offer our expertise in custom mobile and web app development for enterprises, SMBs, startups. Let our cases inspire you!
-</div>    
-</div> 
-<div class = "clear"></div>
-<div id = "toddy">
-    <div>    
-        <div>
-            <img src = "images/toddy-1.img">
-            <img src = "images/toddy-2.img">
-        </div>
-    </div>
-    <div>
-        <h1>TODDY</h1>
-        <p>Online marketplace for parents and babysitters
-We have joined Toddy team to work on a startup idea: to develop a marketplace that helps parents find trusted babysitters in their neighborhood. Using hybrid mobile application development framework, Clockwise team was able to quickly develop mobile apps for both iOS and Android.</p>
-        <p>Marketplace <i class = "fa fa-circle"></i> Mobile</p>
-        <a href = "#"><span id = "demo" style = "letter-spacing: normal; margin-left: 100px;"> </span></a>
-        <span id = "forw"  onmouseover = "typeWriter()" >
-          <span class="glyphicon glyphicon-chevron-right" style = "color: orangered;"></span> 
-          <span class="glyphicon glyphicon-chevron-right" style = "color: orange;"></span> 
-          <span class="glyphicon glyphicon-chevron-right" style = "color: gold;"></span>
-        </span>
-    </div>    
-</div>
-    
-    <!--SEGMENT AI-->
-<div class = "clear"></div>
- <div id = "segment">
-     <div id = "segment-text">
-         <h3>SEGMENT AI</h3>
-         <p>Lead segmentation web app with machine learning. Our web app developers were working on a startup project aiding sales and marketing professionals. The tool uses elements of artificial intelligence and data science to collect and segment all leads based on various criteria. As a result, it enables to customize offers and achieve better conversion rate.</p>
-
-         <p style = "font-weight: 600; margin: 30px 0;">Lead Management <i class =  "fa fa-circle"></i> WEB</p>
-           <a href = "#"><span id = "demo1" style = "letter-spacing: normal; margin-left: 0;
-                font-size: 16px;"> </span></a>
-             
-        <span id = "forw"  onmouseover = "typeWriter1()" >
-          <span class="glyphicon glyphicon-chevron-right" style = "color: orangered;"></span> 
-          <span class="glyphicon glyphicon-chevron-right" style = "color: orange;"></span> 
-          <span class="glyphicon glyphicon-chevron-right" style = "color: gold;"></span>
-        </span>
+    <div id = "container" onclick = "myFunction(event)">
+        <div id = "main-text"></div>   
+        <div id = "main-img">
+            <img src = "images/earth.png" id = "earth" >
+            <img src = "images/arms.png " id  = "arms" >
+            <img src = "images/satellite.png " id = "satellite">
+            <img src = "images/ball.png" id = "ball" >
+            <img src = "images/baloon.png" id = "baloon" >
+            <img src = "images/bag.png" id = "bag" >
+            <img src = "images/telephone.png" id = "telephone" >
+            <img src = "images/truck.png" id = "truck" >
      </div>
-     <div id = "segment-img">
-         <div id = "segment-circle"></div>
-            <img src = "images/segment.img">
-     </div>
-</div>   
-<script src = "js/header.js"></script>   
-<script src = "js/anime.js"></script>   
-<script src = "js/form.js"></script>   
-<script src = "js/ourser.js"></script>   
+    </div>
+<script src = "script1.js"></script>   
 </body>
 </html>
