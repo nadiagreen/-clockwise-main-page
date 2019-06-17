@@ -3,24 +3,41 @@ var open = document.getElementById("open");
 var stick1 = document.getElementById("stick-1");
 var stick2 = document.getElementById("stick-2");
 var stick3 = document.getElementById("stick-3");
+var openEx = document.getElementById("open-ex");
 function op(){
-    console.log (stick2.offsetWidth);
-    if(stick2.offsetWidth == 25) {
+    console.log(openEx.offsetHeight);
+    if( stick2.offsetWidth == 25 || openEx.offsetHeight == 0) {
         stick2.style.width = 0;
         stick1.style.top = "5px";
         stick3.style.top = "5px";
         stick1.style.transform = "rotate(45deg)";
-        stick3.style.transform = "rotate(-45deg)";   
+        stick3.style.transform = "rotate(-45deg)"; 
+        openEx.style.height = "418px";
     }
-      if(stick2.offsetWidth == 0) {
+      if( stick2.offsetWidth == 0 || openEx.offsetHeight == 418) {
+        
         stick2.style.width = "25px";
         stick1.style.transform = "rotate(0deg)";
         stick3.style.transform = "rotate(0deg)";  
         stick1.style.top = 0;
-        stick3.style.top = "10px";   
+        stick3.style.top = "10px";  
+        openEx.style.height = 0;
     }
 }
+ function myFunction(x) {
+  if (x.matches) { // If media query matches
+      openEx.style.height = 0;
+  } 
+     else {
+         if(stick2.offsetWidth == 0) {
+             openEx.style.height = "418px";
+         }
+     }
+}
 
+var x = window.matchMedia("(min-width: 851px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 //=================================MAIN ANIMATION==================================================
 var earth = document.getElementById("earth");
 var arms = document.getElementById("arms");
@@ -30,7 +47,7 @@ var baloon = document.getElementById("baloon");
 var bag = document.getElementById("bag");
 var telephone = document.getElementById("telephone");
 var truck = document.getElementById("truck");
-console.log(truck.offsetWidth);
+
 window.onscroll = function(e) {
     console.log(this.oldScroll > this.scrollY);
         if(window.pageYOffset == 0) {
@@ -64,7 +81,7 @@ window.onscroll = function(e) {
        }
     
         if(window.pageYOffset > 100 && window.pageYOffset <= 200) { 
-                console.log(truck.offsetWidth);
+        
             truck.style.right = truck.offsetWidth / 100 * 7.5 + "px";
             truck.style.top = truck.offsetWidth / 100 * -2 + "px";
              telephone.style.right = truck.offsetWidth / 100 *  7 + "px";
@@ -126,8 +143,4 @@ window.onscroll = function(e) {
     
     this.oldScroll = this.scrollY;
 }
-function myFunction(event){
-    document.getElementById("demo").innerHTML = "x = " + event.offsetX + " : y = " + event.offsetY;
-    console.log(425 - 306);
-    console.log(425 - 260);
-}
+ 
