@@ -9,31 +9,35 @@ a {
     text-decoration: none;
     color: rgb(51, 72, 75);
 }
-
+h2 {font-size: 40px;}
+h3 {font-size: 30px;}
+p {font-weight: 600; font-size: 18px; line-height: 25px;}
+.h3-img {display: none; margin-left: 25%;}
 /*------------------------------------------HEADER--------------------------------------------------*/
 
 #header {
-    
     width: 100%;
     height: 80px;
     box-shadow: 0 4px 8px 0 lightgray;
     position: fixed;
+    top: 0;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
 }
 #inner-header {
-    max-width: 960px;
-    width: 96%;
-    height: 80px;
+    width: 1200px;
     margin: 0 auto;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 #logo {
-    flex: 30%;
+    flex: 25%;
     display: flex;
     justify-content: flex-start;
+    background-color: beige;
+    align-items: center;
 }  
 #logo svg{
     width: 32px;
@@ -42,16 +46,20 @@ a {
     margin-left: 10px;
     font-family: cursive;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
+}
+#logo span {
+    margin-left: 10px;
 }
 .navbar {
     display: flex;
-    flex: 60%;
+    flex: 55%;
     justify-content: space-between;
     align-items: center;
+    background-color: cornsilk;
 }
 .navbar a {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
 }
 #case-studies:hover, #services:hover, #blog:hover, #about-us:hover {
@@ -82,7 +90,7 @@ a {
     display: flex;
     flex-direction: column;
 }
-p {
+#dropdown-inner p {
     display: flex;
     justify-content: space-around;
 }
@@ -115,8 +123,7 @@ p {
     display: none;
     position: relative;
     width: 25px;
-    height: 12px;
-    
+    height: 12px;   
 }
 #open div {
     position: absolute;
@@ -148,128 +155,348 @@ p {
 }
 /*------------------------------MAIN ANIMATION--------------------------------------------------*/
 #container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    margin: 80px auto;
+    width: 1200px;
+    height: auto;
     border: 3px dotted lightgray;
     background-color: bisque;
 }
-#main-text {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    width: 32%;
-    height:  32%;
-    border: 1px solid red;
+#main-text { 
+   width: 50%;
+
 }
  
 #main-text h1 {
-    font-size: 50px;
-    font-weight: 900;
+    font-size: 46px;
+    font-weight: 800;
+    margin-top: 150px;
 } 
 #main-text p{
     line-height: 30px;
-    width: 190%;
+    font-size: 20px;
+    font-weight: 600;
+}
+#ourservices-ex {
+    display: flex;
+      background: linear-gradient(to right, orangered, darkorange);
+    border-radius: 25px;
+    width: 190px;
+    height: 40px;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+    #our-services{
+    width: 190px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#our-services span {
+    margin-left: 20px;
+}
+#ourservices-circle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 34px;
+    height: 34px;
+    background-color: lightcoral;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+#our-services i {
     font-size: 20px;
 }
-#main-img  img {
-    width: 67%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
-    transition-duration: 0.5s;
+/*----------------------------------------------------------------DEVELOPMENT--------------------------------------------------------------*/
+#development {
+    display: flex;
+    margin: 100px auto;
+    border: 1px solid aqua;
+    justify-content: space-between;
 }
-/*------------------------------------------MEDIA--------------------------------------------------*/
-@media only screen and (min-width: 851px) {
-    #open-ex {
-        height: 0;
-    }
+#development-left {width: 30%;}
+#development-left h3 {font-size: 20px;} 
+#development-left p { line-height: 25px;} 
+    
+#development-right {
+    margin-top: 50px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+} 
+#development-right div {
+    height: 150px;
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
 }
-@media only screen and (max-width: 850px) {
-    #header, #inner-header, #logo, .navbar {
-        height: 60px;
-    }
-    #container {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    #main-img{
-        width: 100%;
-    }
-      #main-text {
-        width: 100%;
-    }
-     #main-text p, #main-text h1{
-        width: 94%;
-         margin: 0 auto;
-    }
-    #main-text h1 {
-        margin-bottom: 30px;
-    }
-    #main-text{
-        margin-top: 670px;
-    }
-    #main-img img {
-        width: 100%;
-    }
-    #expertise, #case-studies, #services, #blog, #about-us{
-        display: none;
-    }
-    #inner-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .navbar {
-        align-items: center;
-        justify-content: flex-end;
-        overflow: hidden;
-    }
-    #logo, .navbar{
-     align-items: center;
-    flex: auto;
+#development-right img {
+    height: 60px;
 }
-    #open {
-        display: block;
-    }
+#development-right p {
+    
+    text-align: center;
+}
+/*------------------------------HOW--------------------------------------------------*/
+#how {
+    max-width: 1000px;
+    display: flex;
+}
+#how h2 {
+    width: 32%;
+}
+#how p {
+    width: 63%;
+    margin-top: 38px;
+}
+/*----------------------------------------TODDY--------------------------------------------*/
+
+#toddy {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    
+}
+#toddy-left {
+    flex: 60%;
+    position: relative;   
+}
  
+ #toddy-1 {
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    transition-duration: 1s;
+}
+ #toddy-2 {
+    top: 0;
+    position: absolute;
+    left: 250px;
+    transition-duration: 1s;
+}
+
+ 
+#toddy-right {flex: 40%;}
+#toddy-right i{font-size: 25px;}
+/*---------------------------------------FORM--------------------------------------------------------------------------*/
+/*---------------------------------------SEGMENT AI----------------------------------------------*/ 
+#segment {display: flex; width: 100%; justify-content: space-between;}
+#segment-left {width: 45%;}
+#segment-right {width: 45%;}
+#segment i, #udk i {font-size: 25px;}
+
+/*---------------------------------------UDK---------------------------------------------------*/
+#udk {
+    background-color: floralwhite;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 100px auto;
+}
+#udk-img, #udk-text {width: 45%;}
+#udk-img{position: relative;}
+#graphic {position: absolute; top: 100px; left: 0;}
+/*---------------------------OUR EVERY------------------------------------------------------------*/
+#viev {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(to right, orange, gold);
+    color: white;
+    font-size: 20px;
+}
+/*-------------------------------------EXPERTI----------------------------------------------*/
+
+#experti {width: 100%;  display: flex;  justify-content: space-around; }
+.experti-div {width: 420px; height: 320px; position: relative; overflow-x: hidden; border-radius: 5px; margin-bottom: 40px; text-align: center; box-shadow: 0 8px 16px 0;}
+.experti-div img {position: absolute; top: 3px;left: -310px; transition-duration: 1s; }
+.experti-div img:hover { left: 0;}
+
+.ex-line {position: absolute;  top: 0; width: 100%; height: 3px; 
+    background: linear-gradient(to right, royalblue, lightskyblue);
+}
+    #experti h3 {margin: 40px auto;  font-size: 40px; font-weight: 600; background-color: azure;  text-align: center; }
+.experti-div h4 {position: absolute; top: 20px; margin-left: 20px; font-weight: 600; z-index: 1;}
+.experti-div a {position: absolute; left: -150px;bottom: 100px; z-index: 1; font-size: 16px; transition-duration: 1s;
+    font-weight: 600; color: white; padding: 10px 20px; border-radius: 20px;
+    background: linear-gradient(to right, orangered, gold); 
+}
+.experti-div:hover a {left: 20px;}
+.experti-div p {position: absolute; left: 20px; bottom: 20px; font-size: 16px;
+    font-weight: 600;
+}
+/*---------------------------------------ZMEYKA--------------------------------------------------*/
+#zmeyka {display: flex; width: 90%; height: 200px; margin: 70px auto;  background-color: WhiteSmoke ;           border-radius: 150px; align-items: center; justify-content: space-around;}
+#zmeyka img {width: 9%; margin-left: 2%;}
+#zmeyka p {width: 45%; text-align: center; font-size: 25px; }
+#zmeyka a {width: auto; font-size: 20px; font-weight: 600; padding: 10px 26px; border-radius: 20px;
+    background: linear-gradient(to right, LightSeaGreen , Turquoise ); color: white; margin-right: 2%;}
+
+/*-----------------------------------------OUR EXPERIENCE-----------------------------------------*/
+#our-experience {  width: 100%; height: 300px; background-color: whitesmoke;}
+#ourexperience-in {
+    margin:  auto;
+    width: 1200px;
+    height: 200px;
+    border: 3px dotted lightgray;
+    background-color: whitesmoke;
+    display: flex;
+}   
+#ourexperience-left {display: flex; width: 30%; height: 200px; font-size: 40px; font-family: cursive; font-weight: 600; align-items: center;}
+#ourexperience-right {width: 60%;}
+#ourexperience-img {display: flex; width: 1200px; margin: 0 auto; justify-content: space-between;}
+.ourexperience-div { width: 32%; display: flex;flex-direction: column;}
+.ourexperience-div img{ width: 100%; }
+
+/*------------------------------------------MEDIA--------------------------------------------------*/
+
+
+
+ 
+@media only screen and (max-width: 1200px) {
+        #header, #inner-header, #logo, .navbar {height: 60px;}
+        #inner-header {width: 96%;}
+        #ourservices-ex {margin-left: 3%;}
+        #open-ex {height: 0;}
+        #container {width: 96%; }
+        #main-img{width: 100%;}
+        #main-text {width: 100%;margin: 0 auto;}
+        #main-text p{width: 94%;margin: 20px auto;}
+        #main-text h1 {width: 94%;margin: 40px auto;}
+        #main-img img { width: 100%;}
+        #expertise, #case-studies, #services, #blog, #about-us{display: none;}
+        #inner-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 94%;
+    }
+    #logo span {display: none;}
+    #logo {margin-left: 5%;}
+    .navbar {
+        overflow: hidden;
+        justify-content: flex-end;
+        margin-right: 5%;
+    }
+    #logo, .navbar{align-items: center;flex: 50%;}
+    #open {display: block;}
+    #development {width: 94%;}
+    #ourexperience-in {flex-direction: column; height: auto;}
+    #ourexperience-img {width: 100%;}
+}
+@media only screen and (max-width: 1000px) {
+    #how, #udk {flex-direction: column;}
+    #segment {flex-direction: column-reverse;}
+    #how p {margin-top: auto;}
+    #development {flex-direction: column;}
+    #development-right, #development-left {width: 100%;}
+    #development-right {margin-top: 30px;}
+    #toddy { flex-direction: column;justify-content: flex-start;}
+    #toddy-left {position: relative; background-color: lightpink; }  
+    #toddy-h3first {display: block;}
+    .h3-text {display: none;}
+    .h3-img {display: block; margin: 0 auto;}
+    #segment-left, #segment-right, #udk-text, #udk-img, #segment img, #udk img {width: 94%; margin: 30px auto;}
+    #toddy-1 {margin-top: 100px;}
+    #toddy-2 {margin-top: 70px;}
+ 
+    .experti-div {margin-bottom: 40px; width: 350px; height: 350px;}
+    #experti-left, #experti-right {height: auto; margin: 0 auto;}
+    
+
+@media only screen and (max-width: 800px) {
+     #experti{flex-wrap: nowrap; flex-direction: column; height: auto; justify-content: space-around;}
+    .experti-div {width: 420px;}
+    #zmeyka {flex-direction: column; height: 320px; border-radius: 160px;}
+    #zmeyka img {width: 12%; margin-top: 5%;}
+    #zmeyka p {width: 70%;}
+    #zmeyka a {margin-bottom: 5%;}
+    #ourexperience-img {flex-direction: column;}
+    #ourexperience-in {height: auto;}
+    .ourexperience-div {width: 100%;}
+    #ourexperience-in {width: 100%;}
+    #ourexperience-in div {width: 100%;}
+    #ourexperience-in p {width: 100%;}
+    #ourexperience-in h3 {width: 100%;}
+    
+}
 @media only screen and (max-width: 700px) {
-      #container {
-        height: 100px;
-        justify-content: space-between;
-            background-color: bisque;
+    #container {justify-content: space-between;background-color: bisque;}
+    
+    
+    #open-1 a {font-size: 14px;}
+@media only screen and (max-width: 600px) {
+    #development {margin: 50px auto;}
+    #toddy-1, #toddy-2 {position: absolute; width: 40%;}
+    #toddy-1 {left: 7%;}
+    #toddy-2 {left: 40%; margin-top: 90px;}
+    #toddy-c {width: 90%;}
+    
+}
+    
+    @media only screen and (max-width: 500px) {
+        #main-text h1 {font-size: 30px;}
+        #logo {margin-left: 0;}
+        .navbar {margin-right: 0;}
+        #toddy-1 {top: 30px;}
+        .experti-div {width: 96%;  margin: 20px auto; text-align: center;}
+        #experti img { left: -300px; }
+        #experti img:hover { left: 0px; }
+        
+        .experti-div h4 { margin: 20px 0 0 20px;}
+        #experti-left, #experti-right {width: 100%;}
+        #zmeyka {width: 98%; height: 500px; border-radius: 250px;}
+        #zmeyka  img {width: 20%;}
+        .experti-div p { margin: 10px 0;}
     }
-    }
-
 @media only screen and (max-width: 400px) {
-   
     #contact-us {display: none;}
-    
-    #main-text h1 {
-        font-size: 30px;
-    }
-  
+    .navbar i {display: block;}
+    #toddy-h3first {margin-left: 30%;}
+    .experti-div {height: 350px;}
 }
 
-@media only screen and (max-width: 300px) {
-    
-    .navbar i {
-        display: block;
-    }
-    
-    #logo a {
-        font-size: 18px;
-    }
-     #logo {
-        flex-direction: column;
-    }
-}
-    
+@media only screen and (max-width: 320px) {
+    #logo a {font-size: 18px;}
+     #logo {flex-direction: column;}
+    #open-1 a {font-size: 12px; line-height: 20px;}
+    #main-text h1 {font-size: 20px;}
+    span.psw {display: block;float: none;}
+    .cancelbtn {width: 100%;}
+     #development-right div{width: 49%;}
+    #toddy-right {font-size: 14px;}
+    #toddy-1 {top: 20px;}
+    #zmeyka {height: 500px;}
+    #zmeyka img {width: 35%;}
+    #zmeyka a { margin-bottom: 50px;}
+    .experti-div {height: 350px;}
+    #ourexperience-in h3 {font-size: 26px;}
+}  
 @media only screen and (max-width: 200px) {
-    #open-ex {
-        height: 0;
-    }
+    #open {height: 0;}
+    .navbar i, #open {display: none;}
+    #main-text p {font-size: 12px;line-height: 20px;}
+    #development-right div{width: 100%;}
+    .h3-text {font-size: 20px;}
+    #experti h3 {font-size: 25px;}
+    .experti-div {height: 450px;}
+    .experti-div a {padding: 8px; border-radius: 16px; bottom: 200px; left: -110px;}
+    .experti-div:hover a {left: 0;}
+    .experti-div h4 {margin: 0;}
+    .experti-div p {left: 0;}
+    #viev {padding: 8px;}
+    #zmeyka {height: 450px;}
+    #zmeyka img{width: 50%;}
+    #zmeyka p{font-size: 16px;}
+    #zmeyka a{font-size: 12px; padding: 5px;}
     }
     
     

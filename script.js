@@ -39,6 +39,7 @@ var x = window.matchMedia("(min-width: 851px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 //=================================MAIN ANIMATION==================================================
+/*
 var earth = document.getElementById("earth");
 var arms = document.getElementById("arms");
 var satellite = document.getElementById("satellite");
@@ -143,4 +144,72 @@ window.onscroll = function(e) {
     
     this.oldScroll = this.scrollY;
 }
- 
+//==============================================================FORM=============================================================
+
+var modal = document.getElementById('id01');
+window.onclick = function(event){
+    if(event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+*/
+//========================================TODDY===================================================
+var writerToddy = document.getElementById ("writer-toddy");
+var demoToddy = document.getElementById ("demo-toddy");
+var t = 0;
+var txtToddy = "Find out more";
+
+writerToddy.addEventListener("mouseover", typeWriterToddy);
+
+function typeWriterToddy(){
+    if (t < txtToddy.length) {
+        demoToddy.innerHTML += txtToddy.charAt(t);
+        t++;
+        setTimeout(typeWriterToddy, 50);
+    }
+}
+//=========================================SEGMENT==========================
+
+var writerSegment = document.getElementById ("writer-segment");
+var demoSegment = document.getElementById ("demo-segment");
+var s = 0;
+var txtSegment = "Find out more";
+
+writerSegment.addEventListener("mouseover", typeWriterSegment);
+
+function typeWriterSegment(){
+    if (s < txtSegment.length) {
+        demoSegment.innerHTML += txtSegment.charAt(s);
+        s++;
+        setTimeout(typeWriterSegment, 50);
+    }
+}
+
+
+//==============================================UDK=====================================
+
+
+var writerUdk = document.getElementById ("writer-udk");
+var demoUdk = document.getElementById ("demo-udk");
+var u = 0;
+var txtUdk = "Find out more";
+
+writerUdk.addEventListener("mouseover", typeWriterUdk);
+
+function typeWriterUdk(){
+    if (u < txtUdk.length) {
+        demoUdk.innerHTML += txtUdk.charAt(u);
+        u++;
+        setTimeout(typeWriterUdk, 50);
+    }
+}
+
+
+
+
+
+
+
+
+
+
