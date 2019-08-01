@@ -3,16 +3,19 @@ body {
     padding: 0;
     font-family: sans-serif;
     color: rgb(51, 72, 75);
-    font-family: Arial;
+    font-family: "Open Sans", Arial;
 }
+.clear {clear: both;}
 a {
     text-decoration: none;
     color: rgb(51, 72, 75);
 }
+a:hover {text-decoration: none;}
 h2 {font-size: 40px;}
 h3 {font-size: 30px;}
 p {font-weight: 600; font-size: 18px; line-height: 25px;}
 .h3-img {display: none; margin-left: 25%;}
+h5 {font-size: 16px; font-weight: 600;}
 /*------------------------------------------HEADER--------------------------------------------------*/
 
 #header {
@@ -36,17 +39,18 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
     flex: 25%;
     display: flex;
     justify-content: flex-start;
-    background-color: beige;
     align-items: center;
 }  
 #logo svg{
     width: 32px;
+    margin-bottom: 10px;
 }
 #logo a {
     margin-left: 10px;
+    margin-bottom: 10px;
     font-family: cursive;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 26px;
 }
 #logo span {
     margin-left: 10px;
@@ -56,10 +60,10 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
     flex: 55%;
     justify-content: space-between;
     align-items: center;
-    background-color: cornsilk;
+    
 }
 .navbar a {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
 }
 #case-studies:hover, #services:hover, #blog:hover, #about-us:hover {
@@ -111,10 +115,11 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
 }
 #contact-us {
     border: 2px solid orange;
-    padding: 10px;
+    padding: 7px;
     border-radius: 20px;
     margin-right: 10px;
 }
+
 #contact-us:hover, .navbar i:hover {
     background-color: orange;
     color: white;
@@ -140,6 +145,7 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
     overflow: hidden;
     transition-duration: 1s;
 }
+
 #open-1  {
     display: flex;
     justify-content: space-around;
@@ -158,8 +164,6 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
     margin: 80px auto;
     width: 1200px;
     height: auto;
-    border: 3px dotted lightgray;
-    background-color: bisque;
 }
 #main-text { 
    width: 50%;
@@ -178,7 +182,7 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
 }
 #ourservices-ex {
     display: flex;
-      background: linear-gradient(to right, orangered, darkorange);
+      background: linear-gradient(to right, orangered, orange);
     border-radius: 25px;
     width: 190px;
     height: 40px;
@@ -206,7 +210,7 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
     justify-content: space-around;
     width: 34px;
     height: 34px;
-    background-color: lightcoral;
+    background-color: darksalmon;
     border-radius: 50%;
     margin-right: 3px;
 }
@@ -217,7 +221,6 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
 #development {
     display: flex;
     margin: 100px auto;
-    border: 1px solid aqua;
     justify-content: space-between;
 }
 #development-left {width: 30%;}
@@ -296,7 +299,7 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
 
 /*---------------------------------------UDK---------------------------------------------------*/
 #udk {
-    background-color: floralwhite;
+    
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -308,22 +311,22 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
 /*---------------------------OUR EVERY------------------------------------------------------------*/
 #viev {
     padding: 10px 20px;
-    border-radius: 20px;
-    background: linear-gradient(to right, orange, gold);
+    border-radius: 30px;
+    background: linear-gradient(to right, orangered, gold); 
     color: white;
     font-size: 20px;
 }
 /*-------------------------------------EXPERTI----------------------------------------------*/
 
 #experti {width: 100%;  display: flex;  justify-content: space-around; }
-.experti-div {width: 420px; height: 320px; position: relative; overflow-x: hidden; border-radius: 5px; margin-bottom: 40px; text-align: center; box-shadow: 0 8px 16px 0;}
+.experti-div {width: 420px; height: 320px; position: relative; overflow-x: hidden; border-radius: 5px; box-shadow: 0 8px 16px 0; margin: 0 auto 40px auto;}
 .experti-div img {position: absolute; top: 3px;left: -310px; transition-duration: 1s; }
 .experti-div img:hover { left: 0;}
 
 .ex-line {position: absolute;  top: 0; width: 100%; height: 3px; 
     background: linear-gradient(to right, royalblue, lightskyblue);
 }
-    #experti h3 {margin: 40px auto;  font-size: 40px; font-weight: 600; background-color: azure;  text-align: center; }
+    #experti h3 {margin: 40px auto;  font-size: 40px; font-weight: 600;  text-align: center; }
 .experti-div h4 {position: absolute; top: 20px; margin-left: 20px; font-weight: 600; z-index: 1;}
 .experti-div a {position: absolute; left: -150px;bottom: 100px; z-index: 1; font-size: 16px; transition-duration: 1s;
     font-weight: 600; color: white; padding: 10px 20px; border-radius: 20px;
@@ -340,13 +343,12 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
 #zmeyka a {width: auto; font-size: 20px; font-weight: 600; padding: 10px 26px; border-radius: 20px;
     background: linear-gradient(to right, LightSeaGreen , Turquoise ); color: white; margin-right: 2%;}
 
-/*-----------------------------------------OUR EXPERIENCE-----------------------------------------*/
+/*-----------------------------------------OUR EXPERIENCE++++----------------------------------------*/
 #our-experience {  width: 100%; height: 300px; background-color: whitesmoke;}
 #ourexperience-in {
     margin:  auto;
     width: 1200px;
     height: 200px;
-    border: 3px dotted lightgray;
     background-color: whitesmoke;
     display: flex;
 }   
@@ -355,10 +357,72 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
 #ourexperience-img {display: flex; width: 1200px; margin: 0 auto; justify-content: space-between;}
 .ourexperience-div { width: 32%; display: flex;flex-direction: column;}
 .ourexperience-div img{ width: 100%; }
+/*----------------------------------------------OUR JOURNEY----------------------------------------------------*/
+#our-journey {width: 1200px; margin: 100px auto; display: flex; height: 350px; box-shadow: 0 8px 16px 0;}
+#ourjourney-left {display: flex; width: 30%;  font-size: 40px; font-family: cursive; font-weight: 600; background: linear-gradient(to bottom, LightSeaGreen , lightblue); color: white; padding: 5% 3%; box-sizing: border-box;}
+#ourjourney-right {width: 60%; display: flex; flex-wrap: wrap; justify-content: space-around;}
+.ourjourney-cell {width: 20%; margin: 2% 6%; }
+/*----------------------TECHNOLOGIES---------------------------------------------*/
 
-/*------------------------------------------MEDIA--------------------------------------------------*/
+#tech {display: flex; width: 1200px; justify-content: space-between; margin: 0 auto 100px auto;}
+#tech-left { width: 40%;  font-weight: 700;
+    font-size: 26px;}
+#tech-right { width: 58%; }
 
+/*-------------------------------WEB APP--------------------------------------------*/
+#web-app { width: 1200px; margin: 100px auto;  display: flex; flex-direction: column; background-color: whitesmoke;
+    padding: 20px 0;}
+#web-app  img { width: 6350px; height: 71px; }
+.web-tr {width: 100%; display: flex; margin: 20px; }
+.web-left {width: 145px; font-size: 18px; font-weight: 600; margin: 20px;}
+.web-right {width: 80%; display: flex; flex-wrap: wrap; justify-content: flex-start;}
+.web-icon {background-image: url("images/logo.png");  background-repeat: no-repeat; 
+   height: 71px; width: 145px; box-sizing: border-box; display: flex; align-items: center; margin: 15px 25px;
+}
+/*---------------------------SLIDER----------------------------------------------------------------------*/
+.infinity-slider-wrap {border: 5px solid black; width: 800px; height: 300px; margin: 50px auto; position: relative;}
+.infinity-slider {width: 800px; height: 300px; overflow: hidden; position: relative;}
+.mySlides {  width: 800px; height: 300px;   display: flex; justify-content: space-around; background-color: aliceblue;
+    align-items: center;   position: absolute;}
+ 
+.mySlides-left {width: 35%; display: flex;}
+.mySlides-right {width: 55%; box-shadow: 0 8px 16px 0; height: auto; border-radius: 5px; text-align: left;}
+.mySlides-right p {margin: 20px;}
+.photo-text {margin-left: 20px;}
+.photo-email {font-size: 12px;}
+.photo-text h4, .photo-text p, .photo-text div {margin: 0;}
+.slider-line {width: 100%; height: 4px; background: linear-gradient(to right, orangered, gold);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.in {width: 40px; height: 40px; background-color: blue; border-radius: 50%; color: white; display: flex;
+    align-items: center; justify-content: space-around;
+}
+.infinity-slider .opacity0 {opacity: 0;}
+/*----------------SLIDER CODELAB-----------------------------------------------------------*/
+ 
+/*----------------------------------------FORM-----------------------------------------------------*/
 
+#form-circle-small {width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(to bottom, orangered, gold); z-index: -1; position: absolute; top: -30px; left: 100px;}
+#form-circle-big {width: 300px; height: 300px; border-radius: 50%; background: linear-gradient(to right, orangered, gold); z-index: -3; position: absolute; top: 300px; right: -200px;}
+.formBox {width: 1100px;  margin: 150px auto 100px auto; display: flex; border-radius: 8px;  box-shadow: 0 8px 16px 0;
+    position: relative;}
+#formL, #formR {width: 50%; padding: 30px;  background-color: white; border-radius: 8px; }
+.formL h3 {  cursor: pointer;}
+.inputBox {position: relative; margin: 0 0 20px; width: 94px%;}
+.labelText {position: absolute; font-size: 18px; color: gray; line-height: 70px; transition: 0.5s;
+    background: transparent;}
+ .focus .labelText {transform: translateY(-30px); font-size: 14px; color: violet;}
+.userInput { position: relative; border-top: none;border-left: none; border-right: none; border-bottom: 1px solid gray;  height: 70px; width: 100%; background: transparent; }
+textarea.userInput {height: 250px; width: 94%; margin: 25px 25px 0 0; border: 1px solid gray; position: relative;}
+ 
+.button {font-size: 18px; margin-top: 50px; margin-left: -20%;  cursor: pointer; border: 2px solid orange; border-radius: 30px; padding: 10px 30px; background: none;  width: 200px; text-align: center;}
+.button:hover {color: white; background-color: orange; border: none; outline: none;} 
+.dws-container h1 {margin: 25px; font-weight: 800; position: absolute;}
+.inputBox p {font-size: 14px; font-weight: 500; color: red; display: none;}
+#firstInputBox {display: flex; justify-content: space-between;}
+#firstName, #lastName {width: 100%;}
+/*------------------------------------MEDIA-----------------------------------------------------*/
 
  
 @media only screen and (max-width: 1200px) {
@@ -389,9 +453,31 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
     #logo, .navbar{align-items: center;flex: 50%;}
     #open {display: block;}
     #development {width: 94%;}
-    #ourexperience-in {flex-direction: column; height: auto;}
+    #our-experience {width: 94%; margin: 0 auto;}
+    #ourexperience-in {flex-direction: column; height: auto; width: 96%;}
     #ourexperience-img {width: 100%;}
+    #our-journey {width: 90%; height: auto; margin: 100px auto;}
+    #ourjourney-left, #ourjourney-right{ width: 100%;}
+    #tech {width: 96%; }
+    #web-app {width: 94%; margin: 0 auto;}
+    .web-tr {flex-direction: column;}
+    .web-left, .web-text, .web-right {width: 100%;}
+    .web-text {margin: 20px;}
+    .web-right {justify-content: flex-start;}
+    .mySlides {flex-direction: column; margin-left: 0; width: 90%; height: 500px;}
+    .mySlides-left {width: 80%; margin-left: 10%;}
+    .mySlides-right {width: 80%; margin-left: 10%;}
+    .bs-example {width: 94%;}
+    .dws-wrapper, .dws-container {width: 100%;}
+    
+    .formBox {width: 94%; flex-direction: column;}
+    #formL, #formR {width: 94%; margin: 0 auto;}
+    #formR {width: 100%;}
+    .button {margin-left: 20%;}
+    #form-circle-big {top: 800px;}
 }
+
+
 @media only screen and (max-width: 1000px) {
     #how, #udk {flex-direction: column;}
     #segment {flex-direction: column-reverse;}
@@ -409,9 +495,13 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
     #toddy-2 {margin-top: 70px;}
  
     .experti-div {margin-bottom: 40px; width: 350px; height: 350px;}
-    #experti-left, #experti-right {height: auto; margin: 0 auto;}
-    
+    #experti-left, #experti-right {height: auto;}
+    #our-journey {flex-direction: column;}
 
+    
+    
+    
+}
 @media only screen and (max-width: 800px) {
      #experti{flex-wrap: nowrap; flex-direction: column; height: auto; justify-content: space-around;}
     .experti-div {width: 420px;}
@@ -422,24 +512,33 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
     #ourexperience-img {flex-direction: column;}
     #ourexperience-in {height: auto;}
     .ourexperience-div {width: 100%;}
-    #ourexperience-in {width: 100%;}
+    #ourexperience-in {width: 100%; height: auto;}
     #ourexperience-in div {width: 100%;}
     #ourexperience-in p {width: 100%;}
     #ourexperience-in h3 {width: 100%;}
+    #ourexperience-left {height: auto;}
+    #our-journey {height: 600px;}
+    .ourjourney-cell {width: 35%;}
+    #tech {flex-direction: column;}
+    #tech-left, #tech-right {width: 100%;}
+    
     
 }
 @media only screen and (max-width: 700px) {
     #container {justify-content: space-between;background-color: bisque;}
-    
-    
     #open-1 a {font-size: 14px;}
+    .dws-container {flex-direction: column;}
+    .formBoxL, .formBoxR {width: 94%;}
+}
 @media only screen and (max-width: 600px) {
     #development {margin: 50px auto;}
     #toddy-1, #toddy-2 {position: absolute; width: 40%;}
     #toddy-1 {left: 7%;}
     #toddy-2 {left: 40%; margin-top: 90px;}
     #toddy-c {width: 90%;}
-    
+    #ourexperience-in {justify-content: flex-start; height: auto;}
+    #ourexperience-left {height: auto;}
+    #firstInputBox {flex-direction: column;}
 }
     
     @media only screen and (max-width: 500px) {
@@ -450,18 +549,23 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
         .experti-div {width: 96%;  margin: 20px auto; text-align: center;}
         #experti img { left: -300px; }
         #experti img:hover { left: 0px; }
-        
         .experti-div h4 { margin: 20px 0 0 20px;}
         #experti-left, #experti-right {width: 100%;}
         #zmeyka {width: 98%; height: 500px; border-radius: 250px;}
         #zmeyka  img {width: 20%;}
         .experti-div p { margin: 10px 0;}
+        #our-journey {height: auto;}
+        #ourjourney-right {height: auto;}
+        #form-circle-small, #form-circle-big {display: none;}
     }
 @media only screen and (max-width: 400px) {
     #contact-us {display: none;}
     .navbar i {display: block;}
     #toddy-h3first {margin-left: 30%;}
     .experti-div {height: 350px;}
+      #ourjourney-left{font-size: 24px;}
+    .ourjourney-cell {width: 70%; margin: 20px auto;}
+    .button {margin-left: 0;}
 }
 
 @media only screen and (max-width: 320px) {
@@ -479,6 +583,10 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
     #zmeyka a { margin-bottom: 50px;}
     .experti-div {height: 350px;}
     #ourexperience-in h3 {font-size: 26px;}
+    .ourjourney-cell p{font-size: 16px; }
+    h5 {font-size: 12px;}
+    .button {padding: 8px; width: 150px;}
+    
 }  
 @media only screen and (max-width: 200px) {
     #open {height: 0;}
@@ -497,6 +605,8 @@ p {font-weight: 600; font-size: 18px; line-height: 25px;}
     #zmeyka img{width: 50%;}
     #zmeyka p{font-size: 16px;}
     #zmeyka a{font-size: 12px; padding: 5px;}
+    #tech-left {font-size: 20px;}
+    #tech-right {font-size: 14px;}
     }
     
     

@@ -203,13 +203,229 @@ function typeWriterUdk(){
         setTimeout(typeWriterUdk, 50);
     }
 }
+//======================================SLIDER======================================
 
 
 
 
+ /*
+ var slideIndex = 0;
+    
+function plusDivs(){
+       var mySlides = document.getElementsByClassName("mySlides");
+    for(var i = 0; i < mySlides.length; i++){ 
+        
+    slideIndex++;
+    //if (slideIndex > mySlides.length -1) {slideIndex = 0;}
+    mySlides[slideIndex ].style.display = "flex";
+    mySlides[slideIndex ].style.left = 0;
+    mySlides[slideIndex -1].style.left = "-800px";
+    mySlides[slideIndex + 1].style.left = "800px";   
+}
+}
+ function minusDivs(){
+     for (i = 0; i < mySlides.length; i++){mySlides[i].style.display = "none";                                      }
+    slideIndex--;
+    if (slideIndex < 0  ) {slideIndex = mySlides.length -1;}
+    mySlides[slideIndex].style.display = "flex";
+    mySlides[slideIndex].style.left = 0;
+}
+
+
+var slideIndex = 0;
+showSlides();
+function showSlides(){
+    var slides = document.getElementsByClassName("mySlides");
+    for (var i = 0; i < slides.length; i++){ slides[i].style.display = "none";}
+    console.log(slides[i]);
+    slideIndex++;
+    if(slideIndex > slides.length - 1) {slideIndex = 0;}
+    slides[slideIndex].style.display = "flex";
+    setTimeout(showSlides, 3000);
+}
+
+var slideIndex = 0;
+showSlides();
+function showSlides(){
+    var slides = document.getElementsByClassName("mySlides");
+    for (var i = 0; i < slides.length; i++){ slides[i].style.marginLeft > "800px";}
+    console.log(slides[i]);
+    slideIndex++;
+    if(slideIndex > slides.length) {slideIndex = 0;}
+    //slides[slideIndex].style.display = "flex";
+    slides[slideIndex].style.marginLeft  = 0;
+    setTimeout(showSlides, 3000);
+}
 
 
 
+ var mySlides = [...document.getElementsByClassName ("mySlides")];
+  mySlides.sort(function(a, b){
+      return a.offsetLeft - b.offsetLeft}
+   );
+  
+console.log(mySlides);
+ function sliderLeft () {
+     for(var i = 0; i < mySlides.length; i++) {
+         if(mySlides[i].offsetLeft < -800) {
+             mySlides[i].style.left = "800px";
+             console.log(mySlides[i].style.left);
+             mySlides[i].style.zIndex = 0;
+         } else {
+         
+         mySlides[i].style.left = mySlides[i].offsetLeft -800 + "px";
+         mySlides[i].style.zIndex = 1;
+         
+         }
+     }
+ }
+document.getElementById ("slider-left").onclick = sliderLeft; 
+
+//================================SLIDER w3schools=====================================================
+
+var userInput = document.getElementsByClassName ("userInput");
+for(var i = 0; i < userInput.length; i++){
+userInput[i].addEventListener("focus", function(){
+    this.parentElement.classList.add ("focus");
+});
+    userInput[i].addEventListener ("blur", function(){
+        if(this.value == ""){
+            this.parentElement.classList.remove ("focus");
+        }
+    });
+}
+ 
+  
+ 
+ 
+   function validateForm (){
+    
+    //var valid = true;
+    //return;
+    //valid = "false";
+    //if (valid === false) {return;}
+    
+      for(var i = 0; i < inputs.length; i++) {
+              if (!inputs[i].value) {errors[i].style.display = "block";}  
+    }
+    //window.location = 'google.com';
+}
+ 
+*/
 
 
+//===========================================SLIDER=========================================
+document.getElementById ("slider-left").onclick = sliderLeft;
+var left = 0;
+ 
+ 
+    
+function sliderLeft(){
+    var polosa  = document.getElementById ("polosa");
+    left = left -800;
+    
+    
+    
+    if (left < -1600) {left = 0; }
+    
+    polosa.style.left = left + "px";
+    
+   
+}
+
+
+
+//========================================FORM============================================================
+var inputs = document.getElementsByClassName ("userInput");
+for(var i = 0; i < inputs.length; i++){
+inputs[i].addEventListener("focus", function(){
+    this.parentElement.classList.add ("focus");
+});
+    inputs[i].addEventListener ("blur", function(){
+        if(this.value == ""){
+            this.parentElement.classList.remove ("focus");
+        }
+    });
+}
+ 
+ 
+var errors = document.querySelectorAll (".inputBox p");
+console.log(errors);
+ 
+
+function validateInput0 (){
+    if(!inputs[0].value){
+        errors[0].style.display = "block";
+    } else {errors[0].style.display = "none";}
+}
+
+function validateInput1 (){
+    if(!inputs[1].value){
+        errors[1].style.display = "block";
+    } else {errors[1].style.display = "none";}
+}
+function validateInput4 (){
+    if(!inputs[4].value){
+        errors[3].style.display = "block";
+    } else {errors[3].style.display = "none";}
+}
+inputs[0].addEventListener ("keyup", validateInput0);
+inputs[1].addEventListener ("keyup", validateInput1);
+inputs[4].addEventListener ("keyup", validateInput4);
+ 
+function validateInput2 (){
+    var valid = true;
+     var myEmail = inputs[2].value;
+    var re = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+   console.log(re.test(myEmail));
+        if (myEmail == "") {
+           errors[2].style.display = "block";
+        errors[2].innerHTML = "Please provide your e-mail";
+        
+    }
+    
+    if(re.test(myEmail) == false && myEmail != ""){
+        errors[2].style.display = "block";
+         errors[2].innerHTML = "Wrong e-mail";
+        
+    }
+      if(re.test(myEmail) == true ){
+        errors[2].style.display = "none";  
+        
+      }
+}
+inputs[2].addEventListener ("keyup", validateInput2);
+ 
+
+ /*
+function validateEmptyInput (inputSelector, errorSelector) {
+    if(!inputSelector.value) {
+        errorSelector.style.display = "block";
+    }
+    return;
+}
+
+validateEmptyInput('#firstName', '#firstNameError');
+validateEmptyInput('email', 'emailError');
+*/
+function validateForm () {
+    for(var i = 0; i < errors.length; i++) {
+        if (!inputs[0].value) {errors[0].style.display = "block";}
+        if (!inputs[1].value) {errors[1].style.display = "block";}
+        if (!inputs[2].value) {errors[2].style.display = "block";}
+        if (!inputs[4].value) {errors[3].style.display = "block";}
+        if(!inputs[0].value || !inputs[1].value || !inputs[2].value || !inputs[4].value) {return;}
+    }
+    var myEmail = inputs[2].value;
+    var re = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+   console.log(re.test(myEmail));
+      
+    if(re.test(myEmail) == false && myEmail != ""){
+        errors[2].style.display = "block";
+         errors[2].innerHTML = "Wrong e-mail";
+        return;
+    }
+    
+    window.location = 'google.com';
+}
 
