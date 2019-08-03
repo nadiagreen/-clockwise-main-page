@@ -1,43 +1,41 @@
-
 var open = document.getElementById("open");
 var stick1 = document.getElementById("stick-1");
 var stick2 = document.getElementById("stick-2");
 var stick3 = document.getElementById("stick-3");
 var openEx = document.getElementById("open-ex");
-function op(){
-    console.log(openEx.offsetHeight);
-    if( stick2.offsetWidth == 25 || openEx.offsetHeight == 0) {
-        stick2.style.width = 0;
-        stick1.style.top = "5px";
-        stick3.style.top = "5px";
-        stick1.style.transform = "rotate(45deg)";
-        stick3.style.transform = "rotate(-45deg)"; 
-        openEx.style.height = "418px";
-    }
-      if( stick2.offsetWidth == 0 || openEx.offsetHeight == 418) {
-        
-        stick2.style.width = "25px";
-        stick1.style.transform = "rotate(0deg)";
-        stick3.style.transform = "rotate(0deg)";  
-        stick1.style.top = 0;
-        stick3.style.top = "10px";  
-        openEx.style.height = 0;
-    }
+function op() {
+  console.log(openEx.offsetHeight);
+  if (stick2.offsetWidth == 25 || openEx.offsetHeight == 0) {
+    stick2.style.width = 0;
+    stick1.style.top = "5px";
+    stick3.style.top = "5px";
+    stick1.style.transform = "rotate(45deg)";
+    stick3.style.transform = "rotate(-45deg)";
+    openEx.style.height = "418px";
+  }
+  if (stick2.offsetWidth == 0 || openEx.offsetHeight == 418) {
+    stick2.style.width = "25px";
+    stick1.style.transform = "rotate(0deg)";
+    stick3.style.transform = "rotate(0deg)";
+    stick1.style.top = 0;
+    stick3.style.top = "10px";
+    openEx.style.height = 0;
+  }
 }
- function myFunction(x) {
-  if (x.matches) { // If media query matches
-      openEx.style.height = 0;
-  } 
-     else {
-         if(stick2.offsetWidth == 0) {
-             openEx.style.height = "418px";
-         }
-     }
+function myFunction(x) {
+  if (x.matches) {
+    // If media query matches
+    openEx.style.height = 0;
+  } else {
+    if (stick2.offsetWidth == 0) {
+      openEx.style.height = "418px";
+    }
+  }
 }
 
-var x = window.matchMedia("(min-width: 851px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+var x = window.matchMedia("(min-width: 851px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
 //=================================MAIN ANIMATION==================================================
 /*
 var earth = document.getElementById("earth");
@@ -154,61 +152,56 @@ window.onclick = function(event){
 }
 */
 //========================================TODDY===================================================
-var writerToddy = document.getElementById ("writer-toddy");
-var demoToddy = document.getElementById ("demo-toddy");
+var writerToddy = document.getElementById("writer-toddy");
+var demoToddy = document.getElementById("demo-toddy");
 var t = 0;
 var txtToddy = "Find out more";
 
 writerToddy.addEventListener("mouseover", typeWriterToddy);
 
-function typeWriterToddy(){
-    if (t < txtToddy.length) {
-        demoToddy.innerHTML += txtToddy.charAt(t);
-        t++;
-        setTimeout(typeWriterToddy, 50);
-    }
+function typeWriterToddy() {
+  if (t < txtToddy.length) {
+    demoToddy.innerHTML += txtToddy.charAt(t);
+    t++;
+    setTimeout(typeWriterToddy, 50);
+  }
 }
 //=========================================SEGMENT==========================
 
-var writerSegment = document.getElementById ("writer-segment");
-var demoSegment = document.getElementById ("demo-segment");
+var writerSegment = document.getElementById("writer-segment");
+var demoSegment = document.getElementById("demo-segment");
 var s = 0;
 var txtSegment = "Find out more";
 
 writerSegment.addEventListener("mouseover", typeWriterSegment);
 
-function typeWriterSegment(){
-    if (s < txtSegment.length) {
-        demoSegment.innerHTML += txtSegment.charAt(s);
-        s++;
-        setTimeout(typeWriterSegment, 50);
-    }
+function typeWriterSegment() {
+  if (s < txtSegment.length) {
+    demoSegment.innerHTML += txtSegment.charAt(s);
+    s++;
+    setTimeout(typeWriterSegment, 50);
+  }
 }
-
 
 //==============================================UDK=====================================
 
-
-var writerUdk = document.getElementById ("writer-udk");
-var demoUdk = document.getElementById ("demo-udk");
+var writerUdk = document.getElementById("writer-udk");
+var demoUdk = document.getElementById("demo-udk");
 var u = 0;
 var txtUdk = "Find out more";
 
 writerUdk.addEventListener("mouseover", typeWriterUdk);
 
-function typeWriterUdk(){
-    if (u < txtUdk.length) {
-        demoUdk.innerHTML += txtUdk.charAt(u);
-        u++;
-        setTimeout(typeWriterUdk, 50);
-    }
+function typeWriterUdk() {
+  if (u < txtUdk.length) {
+    demoUdk.innerHTML += txtUdk.charAt(u);
+    u++;
+    setTimeout(typeWriterUdk, 50);
+  }
 }
 //======================================SLIDER======================================
 
-
-
-
- /*
+/*
  var slideIndex = 0;
     
 function plusDivs(){
@@ -313,91 +306,84 @@ userInput[i].addEventListener("focus", function(){
  
 */
 
-
 //===========================================SLIDER=========================================
-document.getElementById ("slider-left").onclick = sliderLeft;
+document.getElementById("slider-left").onclick = sliderLeft;
 var left = 0;
- 
- 
-    
-function sliderLeft(){
-    var polosa  = document.getElementById ("polosa");
-    left = left -800;
-    
-    
-    
-    if (left < -1600) {left = 0; }
-    
-    polosa.style.left = left + "px";
-    
-   
+
+function sliderLeft() {
+  var polosa = document.getElementById("polosa");
+  left = left - 800;
+
+  if (left < -1600) {
+    left = 0;
+  }
+
+  polosa.style.left = left + "px";
 }
-
-
 
 //========================================FORM============================================================
-var inputs = document.getElementsByClassName ("userInput");
-for(var i = 0; i < inputs.length; i++){
-inputs[i].addEventListener("focus", function(){
-    this.parentElement.classList.add ("focus");
-});
-    inputs[i].addEventListener ("blur", function(){
-        if(this.value == ""){
-            this.parentElement.classList.remove ("focus");
-        }
-    });
+var inputs = document.getElementsByClassName("userInput");
+for (var i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener("focus", function() {
+    this.parentElement.classList.add("focus");
+  });
+  inputs[i].addEventListener("blur", function() {
+    if (this.value == "") {
+      this.parentElement.classList.remove("focus");
+    }
+  });
 }
- 
- 
-var errors = document.querySelectorAll (".inputBox p");
+
+var errors = document.querySelectorAll(".inputBox p");
 console.log(errors);
- 
 
-function validateInput0 (){
-    if(!inputs[0].value){
-        errors[0].style.display = "block";
-    } else {errors[0].style.display = "none";}
+function validateInput0() {
+  if (!inputs[0].value) {
+    errors[0].style.display = "block";
+  } else {
+    errors[0].style.display = "none";
+  }
 }
 
-function validateInput1 (){
-    if(!inputs[1].value){
-        errors[1].style.display = "block";
-    } else {errors[1].style.display = "none";}
+function validateInput1() {
+  if (!inputs[1].value) {
+    errors[1].style.display = "block";
+  } else {
+    errors[1].style.display = "none";
+  }
 }
-function validateInput4 (){
-    if(!inputs[4].value){
-        errors[3].style.display = "block";
-    } else {errors[3].style.display = "none";}
+function validateInput4() {
+  if (!inputs[4].value) {
+    errors[3].style.display = "block";
+  } else {
+    errors[3].style.display = "none";
+  }
 }
-inputs[0].addEventListener ("keyup", validateInput0);
-inputs[1].addEventListener ("keyup", validateInput1);
-inputs[4].addEventListener ("keyup", validateInput4);
- 
-function validateInput2 (){
-    var valid = true;
-     var myEmail = inputs[2].value;
-    var re = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
-   console.log(re.test(myEmail));
-        if (myEmail == "") {
-           errors[2].style.display = "block";
-        errors[2].innerHTML = "Please provide your e-mail";
-        
-    }
-    
-    if(re.test(myEmail) == false && myEmail != ""){
-        errors[2].style.display = "block";
-         errors[2].innerHTML = "Wrong e-mail";
-        
-    }
-      if(re.test(myEmail) == true ){
-        errors[2].style.display = "none";  
-        
-      }
-}
-inputs[2].addEventListener ("keyup", validateInput2);
- 
+inputs[0].addEventListener("keyup", validateInput0);
+inputs[1].addEventListener("keyup", validateInput1);
+inputs[4].addEventListener("keyup", validateInput4);
 
- /*
+function validateInput2() {
+  var valid = true;
+  var myEmail = inputs[2].value;
+  var re = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+  console.log(re.test(myEmail));
+  if (myEmail == "") {
+    errors[2].style.display = "block";
+    errors[2].innerHTML = "Please provide your e-mail";
+  }
+
+  if (re.test(myEmail) == false && myEmail != "") {
+    errors[2].style.display = "block";
+    errors[2].innerHTML = "Wrong e-mail";
+  }
+  if (re.test(myEmail) == true) {
+    errors[2].style.display = "none";
+  }
+}
+inputs[2].addEventListener("keyup", validateInput2);
+
+/*
 function validateEmptyInput (inputSelector, errorSelector) {
     if(!inputSelector.value) {
         errorSelector.style.display = "block";
@@ -408,24 +394,38 @@ function validateEmptyInput (inputSelector, errorSelector) {
 validateEmptyInput('#firstName', '#firstNameError');
 validateEmptyInput('email', 'emailError');
 */
-function validateForm () {
-    for(var i = 0; i < errors.length; i++) {
-        if (!inputs[0].value) {errors[0].style.display = "block";}
-        if (!inputs[1].value) {errors[1].style.display = "block";}
-        if (!inputs[2].value) {errors[2].style.display = "block";}
-        if (!inputs[4].value) {errors[3].style.display = "block";}
-        if(!inputs[0].value || !inputs[1].value || !inputs[2].value || !inputs[4].value) {return;}
+function validateForm() {
+  for (var i = 0; i < errors.length; i++) {
+    if (!inputs[0].value) {
+      errors[0].style.display = "block";
     }
-    var myEmail = inputs[2].value;
-    var re = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
-   console.log(re.test(myEmail));
-      
-    if(re.test(myEmail) == false && myEmail != ""){
-        errors[2].style.display = "block";
-         errors[2].innerHTML = "Wrong e-mail";
-        return;
+    if (!inputs[1].value) {
+      errors[1].style.display = "block";
     }
-    
-    window.location = 'google.com';
-}
+    if (!inputs[2].value) {
+      errors[2].style.display = "block";
+    }
+    if (!inputs[4].value) {
+      errors[3].style.display = "block";
+    }
+    if (
+      !inputs[0].value ||
+      !inputs[1].value ||
+      !inputs[2].value ||
+      !inputs[4].value
+    ) {
+      return;
+    }
+  }
+  var myEmail = inputs[2].value;
+  var re = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+  console.log(re.test(myEmail));
 
+  if (re.test(myEmail) == false && myEmail != "") {
+    errors[2].style.display = "block";
+    errors[2].innerHTML = "Wrong e-mail";
+    return;
+  }
+
+  window.location = "google.com";
+}
